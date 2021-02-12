@@ -40,8 +40,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.BtnDownsizeSlideMaster = this.Factory.CreateRibbonButton();
             this.BtnHelp = this.Factory.CreateRibbonButton();
             this.BtnDonate = this.Factory.CreateRibbonButton();
-            this.DownsizerSeparator = this.Factory.CreateRibbonSeparator();
             this.BtnGetDownsizePotential = this.Factory.CreateRibbonButton();
+            this.BtnHideDownsizerTab = this.Factory.CreateRibbonButton();
             this.TabDownsizer.SuspendLayout();
             this.GrpDownsizer.SuspendLayout();
             this.SuspendLayout();
@@ -56,7 +56,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             // 
             this.GrpDownsizer.Items.Add(this.BtnGetDownsizePotential);
             this.GrpDownsizer.Items.Add(this.BtnDownsizeSlideMaster);
-            this.GrpDownsizer.Items.Add(this.DownsizerSeparator);
+            this.GrpDownsizer.Items.Add(this.BtnHideDownsizerTab);
             this.GrpDownsizer.Items.Add(this.BtnHelp);
             this.GrpDownsizer.Items.Add(this.BtnDonate);
             this.GrpDownsizer.Label = "Downsizer";
@@ -96,10 +96,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.BtnDonate.SuperTip = "Love this add-in? Consider buying a coffee for the developer!";
             this.BtnDonate.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnDonate_Click);
             // 
-            // DownsizerSeparator
-            // 
-            this.DownsizerSeparator.Name = "DownsizerSeparator";
-            // 
             // BtnGetDownsizePotential
             // 
             this.BtnGetDownsizePotential.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
@@ -111,6 +107,17 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.BtnGetDownsizePotential.ShowImage = true;
             this.BtnGetDownsizePotential.SuperTip = "Shows the number of unused layouts and master slides.";
             this.BtnGetDownsizePotential.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnGetDownsizePotential_Click);
+            // 
+            // BtnHideDownsizerTab
+            // 
+            this.BtnHideDownsizerTab.Description = "Hides the Downsizer tab.";
+            this.BtnHideDownsizerTab.Label = "Hide this tab";
+            this.BtnHideDownsizerTab.Name = "BtnHideDownsizerTab";
+            this.BtnHideDownsizerTab.OfficeImageId = "WindowHide";
+            this.BtnHideDownsizerTab.ScreenTip = "Hide Tab";
+            this.BtnHideDownsizerTab.ShowImage = true;
+            this.BtnHideDownsizerTab.SuperTip = "Hides the downsizer tab.";
+            this.BtnHideDownsizerTab.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnHideDownsizerTab_Click);
             // 
             // DownsizerRibbon
             // 
@@ -133,8 +140,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnDownsizeSlideMaster;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnHelp;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnDonate;
-        internal Microsoft.Office.Tools.Ribbon.RibbonSeparator DownsizerSeparator;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnGetDownsizePotential;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnHideDownsizerTab;
     }
 
     partial class ThisRibbonCollection

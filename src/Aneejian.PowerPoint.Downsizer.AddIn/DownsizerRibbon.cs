@@ -33,5 +33,10 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         {
             await new SlideMasterDownsizer().DownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizePotential).ConfigureAwait(false);
         }
+
+        private void BtnHideDownsizerTab_Click(object sender, RibbonControlEventArgs e)
+        {
+            Globals.Ribbons.DownsizerRibbon.TabDownsizer.Visible = false;
+        }
     }
 }
