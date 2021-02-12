@@ -159,10 +159,12 @@
     <Compile Include="DownsizerRibbon.Designer.cs">
       <DependentUpon>DownsizerRibbon.cs</DependentUpon>
     </Compile>
+    <Compile Include="PerformAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reporter.cs" />
+    <Compile Include="RibbonStrings.cs" />
     <EmbeddedResource Include="DownsizerRibbon.resx">
       <DependentUpon>DownsizerRibbon.cs</DependentUpon>
     </EmbeddedResource>

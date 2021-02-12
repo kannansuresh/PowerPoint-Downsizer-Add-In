@@ -8,6 +8,9 @@
         public const string AddInDescription = "Add-In to downsize PowerPoint presentations by removing unused custom layouts and master slides.";
         public const string NothingToRemove = "Nothing to remove. All layouts and master slides in use.";
 
+        public const string HideTabLabel = "Hide the Downsizer tab.";
+        public const string UnhideTabLabel = "Show the Downsizer tab.";
+
         public const string BuyCoffeeUrl = "https://www.buymeacoffee.com/aneejian";
         public const string HelpUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer/";
     }

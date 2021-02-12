@@ -16,27 +16,57 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         private async void BtnDownsizeSlideMaster_Click(object sender, RibbonControlEventArgs e)
         {
-            await new SlideMasterDownsizer().Downsize(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizeStatus).ConfigureAwait(false);
+            await PerformAction.DownSize().ConfigureAwait(false);
         }
 
         private async void BtnHelp_Click(object sender, RibbonControlEventArgs e)
         {
-            await Task.FromResult(Process.Start(Fickles.HelpUrl)).ConfigureAwait(false);
+            await PerformAction.Help().ConfigureAwait(false);
         }
 
         private async void BtnDonate_Click(object sender, RibbonControlEventArgs e)
         {
-            await Task.FromResult(Process.Start(Fickles.BuyCoffeeUrl)).ConfigureAwait(false);
+            await PerformAction.Donate().ConfigureAwait(false);
         }
 
         private async void BtnGetDownsizePotential_Click(object sender, RibbonControlEventArgs e)
         {
-            await new SlideMasterDownsizer().DownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizePotential).ConfigureAwait(false);
+            await PerformAction.GetPotential().ConfigureAwait(false);
         }
 
         private void BtnHideDownsizerTab_Click(object sender, RibbonControlEventArgs e)
         {
-            Globals.Ribbons.DownsizerRibbon.TabDownsizer.Visible = false;
+            PerformAction.UnhideOrHideTab();
+        }
+
+        private async void BtnDownsizeInView_Click(object sender, RibbonControlEventArgs e)
+        {
+            await PerformAction.DownSize().ConfigureAwait(false);
+        }
+
+        private async void BtnPotentionInView_Click(object sender, RibbonControlEventArgs e)
+        {
+            await PerformAction.GetPotential().ConfigureAwait(false);
+        }
+
+        private void BtnHideTabInView_Click(object sender, RibbonControlEventArgs e)
+        {
+            PerformAction.UnhideOrHideTab();
+        }
+
+        private async void BtnHelpInView_Click(object sender, RibbonControlEventArgs e)
+        {
+            await PerformAction.Help().ConfigureAwait(false);
+        }
+
+        private async void BtnDonateInView_Click(object sender, RibbonControlEventArgs e)
+        {
+            await PerformAction.Donate().ConfigureAwait(false);
+        }
+
+        private async void BtnDownsizeInViewMenu_Click(object sender, RibbonControlEventArgs e)
+        {
+            await PerformAction.DownSize().ConfigureAwait(false);
         }
     }
 }
