@@ -19,13 +19,13 @@ namespace Aneejian.PowerPoint.Downsizer
         {
             try
             {
+                List<Master> availableMasters = new List<Master>();
+                List<CustomLayout> availableCustomLayouts = new List<CustomLayout>();
+
                 var designs = activePresentation.Designs;
 
                 List<CustomLayout> usedCustomLayouts = await Task.FromResult((from Slide slide in activePresentation.Slides
                                                                               select slide.CustomLayout).ToList()).ConfigureAwait(false);
-
-                List<Master> availableMasters = new List<Master>();
-                List<CustomLayout> availableCustomLayouts = new List<CustomLayout>();
 
                 foreach (Design design in designs)
                 {
@@ -38,7 +38,11 @@ namespace Aneejian.PowerPoint.Downsizer
                     availableCustomLayouts.AddRange(designCustomLayouts);
                 }
 
-                foreach (CustomLayout layout in availableCustomLayouts.Where(layout => !usedCustomLayouts.Contains(layout)))
+                var deletableLayouts = availableCustomLayouts.Where(layout => !usedCustomLayouts.Contains(layout)).ToList();
+
+                var deletableMasters = availableMasters.Where(master => !(from CustomLayout layout in master.CustomLayouts select layout).ToList().Except(deletableLayouts).Any()).ToList();
+
+                foreach (CustomLayout layout in deletableLayouts)
                 {
                     layout.Delete();
                     _deletedLayouts++;
