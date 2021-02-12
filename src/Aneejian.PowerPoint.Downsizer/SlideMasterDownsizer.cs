@@ -13,7 +13,9 @@ namespace Aneejian.PowerPoint.Downsizer
         private bool _isSuccess = true;
         private Exception _exception = null;
 
-        public async Task<IResponse> Downsize(Presentation activePresentation)
+        public delegate Task ReportDownsizingStatus(IResponse response);
+
+        public async Task<IResponse> Downsize(Presentation activePresentation, ReportDownsizingStatus response = null)
         {
             try
             {
@@ -54,7 +56,14 @@ namespace Aneejian.PowerPoint.Downsizer
                 _exception = e;
             }
 
-            return await Task.FromResult(new SlideMasterDownsizeResponse(_isSuccess, _deletedMasters, _deletedLayouts, _exception)).ConfigureAwait(false);
+            var downsizeResponse = await Task.FromResult(new SlideMasterDownsizeResponse(_isSuccess, _deletedMasters, _deletedLayouts, _exception)).ConfigureAwait(false);
+
+            if (response != null)
+            {
+                await response(downsizeResponse).ConfigureAwait(false);
+            }
+
+            return downsizeResponse;
         }
     }
 }
