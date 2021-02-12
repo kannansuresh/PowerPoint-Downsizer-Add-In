@@ -55,9 +55,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fickles.cs" />
+    <Compile Include="ISlideMasterDownsizePotential.cs" />
     <Compile Include="IResponse.cs" />
+    <Compile Include="ISlideMasterDownsizeResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Response.cs" />
+    <Compile Include="SlideMasterDownsizePotential.cs" />
     <Compile Include="SlideMasterDownsizer.cs" />
     <Compile Include="SlideMasterDownsizeResponse.cs" />
   </ItemGroup>

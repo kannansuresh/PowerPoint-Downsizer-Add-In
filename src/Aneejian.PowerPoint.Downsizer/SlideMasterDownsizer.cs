@@ -13,42 +13,23 @@ namespace Aneejian.PowerPoint.Downsizer
         private bool _isSuccess = true;
         private Exception _exception = null;
 
-        public delegate Task ReportDownsizingStatus(IResponse response);
+        public delegate Task ReportDownsizingStatus(ISlideMasterDownsizeResponse response);
+
+        public delegate Task ReportDownsizingPotential(ISlideMasterDownsizePotential potential);
 
         public async Task<IResponse> Downsize(Presentation activePresentation, ReportDownsizingStatus response = null)
         {
             try
             {
-                List<Master> availableMasters = new List<Master>();
-                List<CustomLayout> availableCustomLayouts = new List<CustomLayout>();
+                var potential = await DownsizePotential(activePresentation).ConfigureAwait(false);
 
-                var designs = activePresentation.Designs;
-
-                List<CustomLayout> usedCustomLayouts = await Task.FromResult((from Slide slide in activePresentation.Slides
-                                                                              select slide.CustomLayout).ToList()).ConfigureAwait(false);
-
-                foreach (Design design in designs)
-                {
-                    var slideMaster = design.SlideMaster;
-                    availableMasters.Add(slideMaster);
-
-                    List<CustomLayout> designCustomLayouts = await Task.FromResult((from CustomLayout layout in slideMaster.CustomLayouts
-                                                                                    select layout).ToList()).ConfigureAwait(false);
-
-                    availableCustomLayouts.AddRange(designCustomLayouts);
-                }
-
-                var deletableLayouts = availableCustomLayouts.Where(layout => !usedCustomLayouts.Contains(layout)).ToList();
-
-                var deletableMasters = availableMasters.Where(master => !(from CustomLayout layout in master.CustomLayouts select layout).ToList().Except(deletableLayouts).Any()).ToList();
-
-                foreach (CustomLayout layout in deletableLayouts)
+                foreach (CustomLayout layout in potential.UnusedLayouts)
                 {
                     layout.Delete();
                     _deletedLayouts++;
                 }
 
-                foreach (Master master in availableMasters.Where(master => master.CustomLayouts.Count == 0))
+                foreach (Master master in potential.UnusedMasters)
                 {
                     master.Delete();
                     _deletedMasters++;
@@ -68,6 +49,36 @@ namespace Aneejian.PowerPoint.Downsizer
             }
 
             return downsizeResponse;
+        }
+
+        public async Task<ISlideMasterDownsizePotential> DownsizePotential(Presentation activePresentation, ReportDownsizingPotential potential = null)
+        {
+            var designs = activePresentation.Designs;
+            List<Master> availableMasters = new List<Master>();
+            List<CustomLayout> availableCustomLayouts = new List<CustomLayout>();
+
+            List<CustomLayout> usedCustomLayouts = await Task.FromResult((from Slide slide in activePresentation.Slides
+                                                                          select slide.CustomLayout).ToList()).ConfigureAwait(false);
+
+            foreach (Design design in designs)
+            {
+                var slideMaster = design.SlideMaster;
+                availableMasters.Add(slideMaster);
+                List<CustomLayout> designCustomLayouts = await Task.FromResult((from CustomLayout layout in slideMaster.CustomLayouts
+                                                                                select layout).ToList()).ConfigureAwait(false);
+                availableCustomLayouts.AddRange(designCustomLayouts);
+            }
+            var deletableLayouts = availableCustomLayouts.Where(layout => !usedCustomLayouts.Contains(layout)).ToList();
+            var deletableMasters = availableMasters.Where(master => !(from CustomLayout layout in master.CustomLayouts select layout).ToList().Except(deletableLayouts).Any()).ToList();
+
+            var downSizePotential = new SlideMasterDownsizePotential(deletableLayouts, deletableMasters);
+
+            if (potential != null)
+            {
+                await potential(downSizePotential).ConfigureAwait(false);
+            }
+
+            return downSizePotential;
         }
     }
 }

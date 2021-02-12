@@ -41,6 +41,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.BtnHelp = this.Factory.CreateRibbonButton();
             this.BtnDonate = this.Factory.CreateRibbonButton();
             this.DownsizerSeparator = this.Factory.CreateRibbonSeparator();
+            this.BtnGetDownsizePotential = this.Factory.CreateRibbonButton();
             this.TabDownsizer.SuspendLayout();
             this.GrpDownsizer.SuspendLayout();
             this.SuspendLayout();
@@ -53,6 +54,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             // 
             // GrpDownsizer
             // 
+            this.GrpDownsizer.Items.Add(this.BtnGetDownsizePotential);
             this.GrpDownsizer.Items.Add(this.BtnDownsizeSlideMaster);
             this.GrpDownsizer.Items.Add(this.DownsizerSeparator);
             this.GrpDownsizer.Items.Add(this.BtnHelp);
@@ -66,7 +68,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.BtnDownsizeSlideMaster.Description = "Removes unused custom layouts and master slides.";
             this.BtnDownsizeSlideMaster.Label = "Downsize Slide Master";
             this.BtnDownsizeSlideMaster.Name = "BtnDownsizeSlideMaster";
-            this.BtnDownsizeSlideMaster.OfficeImageId = "SummarizeSlide";
+            this.BtnDownsizeSlideMaster.OfficeImageId = "DeleteSlideContextual";
             this.BtnDownsizeSlideMaster.ScreenTip = "Remove unused Slide Masters";
             this.BtnDownsizeSlideMaster.ShowImage = true;
             this.BtnDownsizeSlideMaster.SuperTip = "Removes unused custom layouts and master slides.";
@@ -98,6 +100,18 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             // 
             this.DownsizerSeparator.Name = "DownsizerSeparator";
             // 
+            // BtnGetDownsizePotential
+            // 
+            this.BtnGetDownsizePotential.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.BtnGetDownsizePotential.Description = "Shows the number of unused layouts and master slides.";
+            this.BtnGetDownsizePotential.Label = "Get Downsize Potential";
+            this.BtnGetDownsizePotential.Name = "BtnGetDownsizePotential";
+            this.BtnGetDownsizePotential.OfficeImageId = "FileViewDigitalSignatures";
+            this.BtnGetDownsizePotential.ScreenTip = "Get Downsize Potential";
+            this.BtnGetDownsizePotential.ShowImage = true;
+            this.BtnGetDownsizePotential.SuperTip = "Shows the number of unused layouts and master slides.";
+            this.BtnGetDownsizePotential.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.BtnGetDownsizePotential_Click);
+            // 
             // DownsizerRibbon
             // 
             this.Name = "DownsizerRibbon";
@@ -120,6 +134,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnHelp;
         internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnDonate;
         internal Microsoft.Office.Tools.Ribbon.RibbonSeparator DownsizerSeparator;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton BtnGetDownsizePotential;
     }
 
     partial class ThisRibbonCollection

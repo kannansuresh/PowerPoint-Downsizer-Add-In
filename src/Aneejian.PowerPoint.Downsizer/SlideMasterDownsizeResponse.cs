@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aneejian.PowerPoint.Downsizer
 {
-    public class SlideMasterDownsizeResponse : Response
+    public class SlideMasterDownsizeResponse : Response, ISlideMasterDownsizeResponse
     {
         private bool RemovedAny => CustomLayoutsDeleted > 0 || CustomLayoutsDeleted > 0;
         public int MasterSlidesDeleted { get; set; }
@@ -27,8 +27,8 @@ namespace Aneejian.PowerPoint.Downsizer
             if (IsSuccess)
             {
                 return RemovedAny ?
-                    $"Unused master slides deleted: {MasterSlidesDeleted}. {newLine}Unused custom layouts deleted: {CustomLayoutsDeleted}." :
-                    "Nothing to remove. The presentation uses all the custom layouts and master slides.";
+                    $"Unused layouts deleted: {CustomLayoutsDeleted} {newLine}Unused master slides deleted: {MasterSlidesDeleted}." :
+                    Fickles.NothingToRemove;
             }
             else
             {
