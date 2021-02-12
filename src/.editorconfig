@@ -1,0 +1,7 @@
+﻿[*.cs]
+
+# RCS1114: Remove redundant delegate creation.
+dotnet_diagnostic.RCS1114.severity = none
+
+# RCS1163: Unused parameter.
+dotnet_diagnostic.RCS1163.severity = none
