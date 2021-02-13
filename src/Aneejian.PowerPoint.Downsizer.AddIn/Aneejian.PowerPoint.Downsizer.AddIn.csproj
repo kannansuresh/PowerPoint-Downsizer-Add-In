@@ -181,8 +181,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <None Include="Aneejian.PowerPoint.Downsizer.AddIn_TemporaryKey.pfx" />
     <None Include="app.config" />
+    <None Include="PPTDownsizer.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -226,10 +226,19 @@
     <SignManifests>true</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestKeyFile>Aneejian.PowerPoint.Downsizer.AddIn_TemporaryKey.pfx</ManifestKeyFile>
+    <ManifestKeyFile>PPTDownsizer.pfx</ManifestKeyFile>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>AA07C9F910421451F3AF00F754D8203DEA9CE754</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>6E3007D19FB029F30D24056B7910FEE75CAED31B</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>PPTDownsizer.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestTimestampUrl>http://timestamp.comodoca.com/authenticode</ManifestTimestampUrl>
   </PropertyGroup>
   <!-- Include the build rules for a C# project. -->
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
