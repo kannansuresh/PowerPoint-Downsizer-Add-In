@@ -20,7 +20,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             await Task.FromResult(Process.Start(Fickles.HelpUrl)).ConfigureAwait(false);
         }
 
-        internal static async Task Donate()
+        internal static async Task Coffee()
         {
             await Task.FromResult(Process.Start(Fickles.BuyCoffeeUrl)).ConfigureAwait(false);
         }
@@ -30,30 +30,9 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             await new SlideMasterDownsizer().DownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizePotential).ConfigureAwait(false);
         }
 
-        internal static void UnhideOrHideTab()
+        internal static string GetProperty(string tag, ControlProperties property)
         {
-            var downsizerTab = Globals.Ribbons.DownsizerRibbon.TabDownsizer;
-            var visible = downsizerTab.Visible;
-
-            downsizerTab.Visible = !visible;
-
-            var buttonLabel = visible ? "Unhide Tab" : "Hide Tab";
-            var buttonTip = visible ? Fickles.UnhideTabLabel : Fickles.HideTabLabel;
-            var officeImageId = visible ? "WindowUnhide" : "WindowHide";
-
-            var buttonInTab = Globals.Ribbons.DownsizerRibbon.BtnHideDownsizerTab;
-            var buttonInView = Globals.Ribbons.DownsizerRibbon.BtnHideTabInView;
-
-            var buttons = new List<RibbonButton>() { buttonInTab, buttonInView };
-
-            foreach (var button in buttons)
-            {
-                button.Label = buttonLabel;
-                button.OfficeImageId = officeImageId;
-                button.ScreenTip = buttonLabel;
-                button.SuperTip = buttonTip;
-                button.Description = buttonTip;
-            }
+            return RibbonControlValues.GetControlProperty(tag, property);
         }
     }
 }

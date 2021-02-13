@@ -153,18 +153,21 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="DownsizerRibbon.cs">
-      <SubType>Component</SubType>
-    </Compile>
+    <Compile Include="DownsizerRibbon.cs" />
     <Compile Include="DownsizerRibbon.Designer.cs">
       <DependentUpon>DownsizerRibbon.cs</DependentUpon>
     </Compile>
+    <Compile Include="Enums.cs" />
     <Compile Include="PerformAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Reporter.cs" />
-    <Compile Include="RibbonStrings.cs" />
+    <Compile Include="Ribbon.cs">
+      <XmlRibbon>true</XmlRibbon>
+    </Compile>
+    <Compile Include="RibbonControlProperties.cs" />
+    <Compile Include="RibbonControlValues.cs" />
     <EmbeddedResource Include="DownsizerRibbon.resx">
       <DependentUpon>DownsizerRibbon.cs</DependentUpon>
     </EmbeddedResource>
@@ -176,8 +179,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Aneejian.PowerPoint.Downsizer.AddIn_TemporaryKey.pfx" />
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -185,6 +190,7 @@
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="DownsizerAddIn.cs">
       <SubType>Code</SubType>
@@ -202,6 +208,15 @@
       <Project>{4813e0d9-b582-4a2c-9d36-7361557eb733}</Project>
       <Name>Aneejian.PowerPoint.Downsizer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Ribbon.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmcwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coffee-cup.png" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

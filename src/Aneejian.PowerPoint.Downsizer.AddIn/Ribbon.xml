@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load"
+  xmlns="http://schemas.microsoft.com/office/2009/07/customui">
+  <ribbon>
+    <tabs>
+      <tab id="TabDownsizer" label="Downsizer" getVisible="GetTabVisibility">
+        <group id="GroupDownsizer" label="Downsizer">
+
+          <button id="BtnPotential" onAction="GetDownsizePotential" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" size="large" tag="Potential" />
+
+          <button id="BtnDownsize" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" size="large" tag="Downsize" />
+
+          <button id="BtnHide" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Hide" />
+
+          <button id="BtnHelp" onAction="Help" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Help" />
+
+          <button id="BtnCoffee" onAction="Coffee" getLabel="GetLabel" getImage="GetCoffeeImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Coffee" />
+        </group>
+      </tab>
+      <tab idMso="TabView">
+        <group id="GroupDownsizerTabView" insertAfterMso="GroupMasterViews">
+          <splitButton id="SplitBtnDownsizeInView" size="large">
+            <button id="SplitBtnDownsizeInView_Btn" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Downsize" />
+            <menu id="SplitBtnDownsizeInView_Menu" itemSize="large">
+              <button id="BtnDownsizeInView" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Downsize" />
+
+              <button id="BtnPotentialInView" onAction="GetDownsizePotential" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Potential" />
+
+              <button id="BtnHideInView" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Hide" />
+
+              <button id="BtnHelpInView" onAction="Help" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Help" />
+
+              <button id="BtnCoffeeInView" onAction="Coffee" getLabel="GetLabel" getImage="GetCoffeeImage" getDescription="GetDescription" tag="Coffee" />
+            </menu>
+          </splitButton>
+        </group>
+      </tab>
+      <tab idMso="TabSlideMaster">
+        <group id="GroupDownsizerTabSlideMaster" insertAfterMso="GroupMasterEdit">
+          <splitButton id="SplitBtnDownsizeInSlideMaster" size="large">
+            <button id="SplitBtnDownsizeInSlideMaster_Btn" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Downsize" />
+            <menu id="SplitBtnDownsizeInSlideMaster_Menu" itemSize="large">
+              <button id="BtnDownsizeInSlideMaster" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Downsize" />
+
+              <button id="BtnPotentialInSlideMaster" onAction="GetDownsizePotential" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Potential" />
+
+              <button id="BtnHideInSlideMaster" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Hide" />
+
+              <button id="BtnHelpInSlideMaster" onAction="Help" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Help" />
+
+              <button id="BtnCoffeeInSlideMaster" onAction="Coffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Coffee" />
+            </menu>
+          </splitButton>
+        </group>
+      </tab>
+    </tabs>
+  </ribbon>
+</customUI>
