@@ -1,7 +1,7 @@
 ﻿[*.cs]
 
-# RCS1114: Remove redundant delegate creation.
-dotnet_diagnostic.RCS1114.severity = none
+# Default severity for analyzer diagnostics with category 'Style'
+dotnet_analyzer_diagnostic.category-Style.severity = none
 
-# RCS1163: Unused parameter.
-dotnet_diagnostic.RCS1163.severity = none
+# Default severity for all analyzer diagnostics
+dotnet_analyzer_diagnostic.severity = none

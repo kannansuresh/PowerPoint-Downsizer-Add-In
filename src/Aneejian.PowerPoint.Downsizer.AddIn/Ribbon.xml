@@ -10,15 +10,22 @@
 
           <button id="BtnDownsize" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" size="large" tag="Downsize" />
 
+          <separator id="GroupSeparator" />
+
           <button id="BtnHide" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Hide" />
 
           <button id="BtnHelp" onAction="Help" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Help" />
 
-          <button id="BtnCoffee" onAction="Coffee" getLabel="GetLabel" getImage="GetCoffeeImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Coffee" />
+          <splitButton id="SplitBtnCoffee" getVisible="GetCoffeeVisibility">
+            <button id="BtnCoffee" onAction="Coffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Coffee" />
+            <menu id="SplitBtnCoffee_Menu" itemSize="large">
+              <button id="BtnHideCoffee" onAction="HideCoffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="HideCoffee" />
+            </menu>
+          </splitButton>
         </group>
       </tab>
       <tab idMso="TabView">
-        <group id="GroupDownsizerTabView" insertAfterMso="GroupMasterViews">
+        <group id="GroupDownsizerTabView" insertAfterMso="GroupMasterViews" label="Downsizer">
           <splitButton id="SplitBtnDownsizeInView" size="large">
             <button id="SplitBtnDownsizeInView_Btn" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Downsize" />
             <menu id="SplitBtnDownsizeInView_Menu" itemSize="large">
@@ -26,17 +33,19 @@
 
               <button id="BtnPotentialInView" onAction="GetDownsizePotential" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Potential" />
 
+              <menuSeparator></menuSeparator>
+
               <button id="BtnHideInView" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Hide" />
 
               <button id="BtnHelpInView" onAction="Help" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Help" />
 
-              <button id="BtnCoffeeInView" onAction="Coffee" getLabel="GetLabel" getImage="GetCoffeeImage" getDescription="GetDescription" tag="Coffee" />
+              <button id="BtnCoffeeInView" onAction="Coffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getVisible="GetCoffeeVisibility" tag="Coffee" />
             </menu>
           </splitButton>
         </group>
       </tab>
       <tab idMso="TabSlideMaster">
-        <group id="GroupDownsizerTabSlideMaster" insertAfterMso="GroupMasterEdit">
+        <group id="GroupDownsizerTabSlideMaster" insertAfterMso="GroupMasterEdit" label="Downsizer">
           <splitButton id="SplitBtnDownsizeInSlideMaster" size="large">
             <button id="SplitBtnDownsizeInSlideMaster_Btn" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Downsize" />
             <menu id="SplitBtnDownsizeInSlideMaster_Menu" itemSize="large">
@@ -44,11 +53,13 @@
 
               <button id="BtnPotentialInSlideMaster" onAction="GetDownsizePotential" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Potential" />
 
+              <menuSeparator id="MenuSeparator2"></menuSeparator>
+
               <button id="BtnHideInSlideMaster" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Hide" />
 
               <button id="BtnHelpInSlideMaster" onAction="Help" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Help" />
 
-              <button id="BtnCoffeeInSlideMaster" onAction="Coffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Coffee" />
+              <button id="BtnCoffeeInSlideMaster" onAction="Coffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getVisible="GetCoffeeVisibility" tag="Coffee" />
             </menu>
           </splitButton>
         </group>

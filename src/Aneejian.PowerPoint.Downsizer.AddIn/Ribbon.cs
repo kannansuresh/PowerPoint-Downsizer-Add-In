@@ -1,13 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+using static Aneejian.PowerPoint.Downsizer.AddIn.Properties.Settings;
 using Office = Microsoft.Office.Core;
 
 // TODO:  Follow these steps to enable the Ribbon (XML) item:
@@ -54,7 +49,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public void Ribbon_Load(Office.IRibbonUI ribbonUI)
         {
-            this.ribbon = ribbonUI;
+            ribbon = ribbonUI;
         }
 
         public async void GetDownsizePotential(Office.IRibbonControl control)
@@ -69,8 +64,16 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public void HideOrReveal(Office.IRibbonControl control)
         {
-            Properties.Settings.Default.ShowDownsizerTab = !Properties.Settings.Default.ShowDownsizerTab;
-            Properties.Settings.Default.Save();
+            Default.ShowDownsizerTab = !Default.ShowDownsizerTab;
+            Default.Save();
+            ribbon.Invalidate();
+        }
+
+        public void HideCoffee(Office.IRibbonControl control)
+        {
+            Default.ShowCoffeeButton = false;
+            Default.UsageCounter = 0;
+            Default.Save();
             ribbon.Invalidate();
         }
 
@@ -86,17 +89,17 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public bool GetTabVisibility(Office.IRibbonControl control)
         {
-            return Properties.Settings.Default.ShowDownsizerTab;
+            return Default.ShowDownsizerTab;
+        }
+
+        public bool GetCoffeeVisibility(Office.IRibbonControl control)
+        {
+            return Default.ShowCoffeeButton || Default.UsageCounter >= Default.RevealCoffeButtonThreshold;
         }
 
         public string GetLabel(Office.IRibbonControl control)
         {
             return PerformAction.GetProperty(control.Tag, ControlProperties.Label);
-        }
-
-        public Bitmap GetCoffeeImage(Office.IRibbonControl control)
-        {
-            return Properties.Resources.coffee_cup;
         }
 
         public string GetImage(Office.IRibbonControl control)

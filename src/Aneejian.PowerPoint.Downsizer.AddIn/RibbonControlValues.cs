@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
@@ -47,7 +44,14 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         (
             label: "Buy a Coffee!",
             description: "Do you like the Downsizer Add-In? Consider buying a coffee for the developer!",
-            image: "Coffee"
+            image: "Heart"
+        );
+
+        private static readonly RibbonControlProperties HideCoffee = new RibbonControlProperties
+        (
+            label: "Hide Buy a Coffee button",
+            description: string.Format("Already bought a coffee or annoyed by this button? Click to hide it from everywhere. {0}{0}The button will comeback after you have used this add-in {1} times.", Environment.NewLine, Properties.Settings.Default.RevealCoffeButtonThreshold),
+            image: "WindowMinimize"
         );
 
         private static readonly Dictionary<string, RibbonControlProperties> ControlDictionary = new Dictionary<string, RibbonControlProperties>()
@@ -57,7 +61,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             ["HideTab"] = HideTab,
             ["RevealTab"] = RevealTab,
             ["Help"] = Help,
-            ["Coffee"] = Coffee
+            ["Coffee"] = Coffee,
+            ["HideCoffee"] = HideCoffee
         };
 
         internal static string GetControlProperty(string tag, ControlProperties property)

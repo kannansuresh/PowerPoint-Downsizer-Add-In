@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Xml.Linq;
-using PowerPoint = Microsoft.Office.Interop.PowerPoint;
-using Office = Microsoft.Office.Core;
-
-namespace Aneejian.PowerPoint.Downsizer.AddIn
+﻿namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
     public partial class DownsizerAddIn
     {

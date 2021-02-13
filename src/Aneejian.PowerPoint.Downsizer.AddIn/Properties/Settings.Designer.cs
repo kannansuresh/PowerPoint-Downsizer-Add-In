@@ -25,13 +25,46 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool ShowDownsizerTab {
             get {
                 return ((bool)(this["ShowDownsizerTab"]));
             }
             set {
                 this["ShowDownsizerTab"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
+        public bool ShowCoffeeButton {
+            get {
+                return ((bool)(this["ShowCoffeeButton"]));
+            }
+            set {
+                this["ShowCoffeeButton"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int UsageCounter {
+            get {
+                return ((int)(this["UsageCounter"]));
+            }
+            set {
+                this["UsageCounter"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("100")]
+        public int RevealCoffeButtonThreshold {
+            get {
+                return ((int)(this["RevealCoffeButtonThreshold"]));
             }
         }
     }
