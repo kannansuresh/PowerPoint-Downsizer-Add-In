@@ -4,12 +4,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Aneejian.PowerPoint.Downsizer.AddIn")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("PowerPoint Downsizer Add-In")]
+[assembly: AssemblyDescription("Add-In to downsize PowerPoint presentations by removing unused layouts and master slides.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("Aneejian.PowerPoint.Downsizer.AddIn")]
-[assembly: AssemblyCopyright("Copyright ©  2021")]
+[assembly: AssemblyCompany("Aneejian")]
+[assembly: AssemblyProduct("PowerPoint Downsizer Add-In")]
+[assembly: AssemblyCopyright("Copyright ©  Aneejian 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
