@@ -25,7 +25,7 @@ DefaultGroupName={#MyAppName}
 DisableProgramGroupPage=yes
 OutputDir=Output
 OutputBaseFilename=PowerPoint Downsizer Add-In
-SetupIconFile=src\downsizer.ico
+SetupIconFile=downsizer.ico
 Compression=lzma
 SolidCompression=yes
 UninstallDisplayIcon={app}\downsizer.ico
@@ -51,6 +51,9 @@ Root: "HKCU"; Subkey: "SOFTWARE\Microsoft\Office\PowerPoint\Addins\Aneejian.Powe
 Root: "HKCU"; Subkey: "SOFTWARE\Microsoft\Office\PowerPoint\Addins\Aneejian.PowerPoint.Downsizer.AddIn"; ValueType: string; ValueName: "FriendlyName"; ValueData: "PowerPoint Downsizer Add-In"; Flags: uninsdeletekey
 Root: "HKCU"; Subkey: "SOFTWARE\Microsoft\Office\PowerPoint\Addins\Aneejian.PowerPoint.Downsizer.AddIn"; ValueType: string; ValueName: "Manifest"; ValueData: "file:///{code:ConvertSlash|{app}}/Aneejian.PowerPoint.Downsizer.AddIn.vsto|vstolocal"; Flags: uninsdeletekey
 Root: "HKCU"; Subkey: "SOFTWARE\Microsoft\Office\PowerPoint\Addins\Aneejian.PowerPoint.Downsizer.AddIn"; ValueType: dword; ValueName: "LoadBehavior"; ValueData: "3"; Flags: uninsdeletekey
+
+[UninstallDelete]
+Type: filesandordirs; Name: "{app}"
 
 [Code]
 {
