@@ -61,7 +61,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("25")]
+        [global::System.Configuration.DefaultSettingValueAttribute("10")]
         public int RevealCoffeButtonThreshold {
             get {
                 return ((int)(this["RevealCoffeButtonThreshold"]));

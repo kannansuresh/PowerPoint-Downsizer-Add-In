@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aneejian.PowerPoint.Downsiz
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Aneejian.PowerPoint.Downsizer.Add-in.Setup", "Aneejian.PowerPoint.Downsizer.Add-in.Setup\Aneejian.PowerPoint.Downsizer.Add-in.Setup.vdproj", "{5D8EE4F2-5E9F-4582-9CB4-5E29D410CD10}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B6711EA-FDD2-46BE-A146-7A4258BD3D5F}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

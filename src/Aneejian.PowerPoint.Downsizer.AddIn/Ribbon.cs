@@ -1,8 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using System.Runtime.InteropServices;
-using static Aneejian.PowerPoint.Downsizer.AddIn.Properties.Settings;
 using Office = Microsoft.Office.Core;
 
 // TODO:  Follow these steps to enable the Ribbon (XML) item:
@@ -30,6 +30,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
     {
         private Office.IRibbonUI ribbon;
 
+        private readonly Properties.Settings settings = Properties.Settings.Default;
+
         public Ribbon()
         {
         }
@@ -50,6 +52,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         public void Ribbon_Load(Office.IRibbonUI ribbonUI)
         {
             ribbon = ribbonUI;
+            settings.PropertyChanged += Default_PropertyChanged;
         }
 
         public async void GetDownsizePotential(Office.IRibbonControl control)
@@ -64,22 +67,46 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public void HideOrReveal(Office.IRibbonControl control)
         {
-            Default.ShowDownsizerTab = !Default.ShowDownsizerTab;
-            Default.Save();
-            ribbon.Invalidate();
+            settings.ShowDownsizerTab = !settings.ShowDownsizerTab;
+            settings.Save();
+            if (settings.ShowDownsizerTab)
+            {
+                ribbon.ActivateTab("TabDownsizer");
+            }
         }
 
         public void HideCoffee(Office.IRibbonControl control)
         {
-            Default.ShowCoffeeButton = false;
-            Default.UsageCounter = 0;
-            Default.Save();
-            ribbon.Invalidate();
+            settings.ShowCoffeeButton = false;
+            settings.UsageCounter = 0;
+            settings.Save();
         }
 
         public async void Help(Office.IRibbonControl control)
         {
             await PerformAction.Help().ConfigureAwait(false);
+            settings.Reset();
+        }
+
+        private void Default_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
+        {
+            var propertyName = e.PropertyName;
+
+            if (propertyName == nameof(Properties.Settings.ShowCoffeeButton))
+            {
+                List<string> coffeeButtons = new List<string>() { "SplitBtnCoffee", "BtnCoffeeInView", "BtnCoffeeInSlideMaster" };
+                coffeeButtons.ForEach(RefreshRibbonControl);
+            }
+            else if (propertyName == nameof(Properties.Settings.ShowDownsizerTab))
+            {
+                List<string> tabHideOrRevealButtons = new List<string>() { "TabDownsizer", "BtnHideInView", "BtnHideInSlideMaster" };
+                tabHideOrRevealButtons.ForEach(RefreshRibbonControl);
+            }
+        }
+
+        private void RefreshRibbonControl(string controlName)
+        {
+            ribbon.InvalidateControl(controlName);
         }
 
         public async void Coffee(Office.IRibbonControl control)
@@ -89,12 +116,12 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public bool GetTabVisibility(Office.IRibbonControl control)
         {
-            return Default.ShowDownsizerTab;
+            return settings.ShowDownsizerTab;
         }
 
         public bool GetCoffeeVisibility(Office.IRibbonControl control)
         {
-            return Default.ShowCoffeeButton || Default.UsageCounter >= Default.RevealCoffeButtonThreshold;
+            return settings.ShowCoffeeButton || settings.UsageCounter >= settings.RevealCoffeButtonThreshold;
         }
 
         public string GetLabel(Office.IRibbonControl control)

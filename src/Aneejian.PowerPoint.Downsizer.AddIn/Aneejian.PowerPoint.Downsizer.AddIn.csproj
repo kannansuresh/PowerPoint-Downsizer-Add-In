@@ -177,10 +177,6 @@
     can be found.
   -->
   <ItemGroup>
-    <Compile Include="DownsizerRibbon.cs" />
-    <Compile Include="DownsizerRibbon.Designer.cs">
-      <DependentUpon>DownsizerRibbon.cs</DependentUpon>
-    </Compile>
     <Compile Include="Enums.cs" />
     <Compile Include="PerformAction.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -192,9 +188,6 @@
     </Compile>
     <Compile Include="RibbonControlProperties.cs" />
     <Compile Include="RibbonControlValues.cs" />
-    <EmbeddedResource Include="DownsizerRibbon.resx">
-      <DependentUpon>DownsizerRibbon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
