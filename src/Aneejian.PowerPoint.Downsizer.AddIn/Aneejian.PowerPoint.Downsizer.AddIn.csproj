@@ -26,7 +26,7 @@
     <NoStandardLibraries>false</NoStandardLibraries>
     <RootNamespace>Aneejian.PowerPoint.Downsizer.AddIn</RootNamespace>
     <AssemblyName>Aneejian.PowerPoint.Downsizer.AddIn</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <DefineConstants>VSTO40</DefineConstants>
     <IsWebBootstrapper>False</IsWebBootstrapper>
     <BootstrapperEnabled>true</BootstrapperEnabled>
@@ -44,6 +44,7 @@
     <FriendlyName>Aneejian.PowerPoint.Downsizer.AddIn</FriendlyName>
     <OfficeApplicationDescription />
     <LoadBehavior>3</LoadBehavior>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -278,7 +279,7 @@
       <FlavorProperties GUID="{BAA0C2D2-18E2-41B9-852F-F413020CAA33}">
         <ProjectProperties HostName="PowerPoint" HostPackage="{29A7B9D7-A7F1-4328-8EF0-6B2D1A56B2C1}" OfficeVersion="15.0" VstxVersion="4.0" ApplicationType="PowerPoint" Language="cs" TemplatesPath="" DebugInfoExeName="#Software\Microsoft\Office\16.0\PowerPoint\InstallRoot\Path#powerpnt.exe" AddItemTemplatesGuid="{51063C3A-E220-4D12-8922-BDA915ACD783}" />
         <Host Name="PowerPoint" GeneratedCodeNamespace="Aneejian.PowerPoint.Downsizer.AddIn" PublishedHash="69C324AB27932AA2FBF2B7EA72250886FF164DE6" IconIndex="0">
-          <HostItem Name="ThisAddIn" Code="DownsizerAddIn.cs" CanonicalName="AddIn" CanActivate="false" IconIndex="1" Blueprint="DownsizerAddIn.Designer.xml" GeneratedCode="DownsizerAddIn.Designer.cs" PublishedHash="208BD9492063A2CC41E8411FC9C3DDC6A2A29375" />
+          <HostItem Name="ThisAddIn" Code="DownsizerAddIn.cs" CanonicalName="AddIn" PublishedHash="208BD9492063A2CC41E8411FC9C3DDC6A2A29375" CanActivate="false" IconIndex="1" Blueprint="DownsizerAddIn.Designer.xml" GeneratedCode="DownsizerAddIn.Designer.cs" />
         </Host>
       </FlavorProperties>
     </VisualStudio>

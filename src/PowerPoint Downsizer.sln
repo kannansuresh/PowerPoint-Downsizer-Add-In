@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aneejian.PowerPoint.Downsiz
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aneejian.PowerPoint.Downsizer.AddIn", "Aneejian.PowerPoint.Downsizer.AddIn\Aneejian.PowerPoint.Downsizer.AddIn.csproj", "{958A660F-EBBB-443E-9505-EB23F6D4F630}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Aneejian.PowerPoint.Downsizer.Add-in.Setup", "Aneejian.PowerPoint.Downsizer.Add-in.Setup\Aneejian.PowerPoint.Downsizer.Add-in.Setup.vdproj", "{5D8EE4F2-5E9F-4582-9CB4-5E29D410CD10}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,9 @@ Global
 		{958A660F-EBBB-443E-9505-EB23F6D4F630}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{958A660F-EBBB-443E-9505-EB23F6D4F630}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{958A660F-EBBB-443E-9505-EB23F6D4F630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D8EE4F2-5E9F-4582-9CB4-5E29D410CD10}.Debug|Any CPU.ActiveCfg = Debug
+		{5D8EE4F2-5E9F-4582-9CB4-5E29D410CD10}.Release|Any CPU.ActiveCfg = Release
+		{5D8EE4F2-5E9F-4582-9CB4-5E29D410CD10}.Release|Any CPU.Build.0 = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
