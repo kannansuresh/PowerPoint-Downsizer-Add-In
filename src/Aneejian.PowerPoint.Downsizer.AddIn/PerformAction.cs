@@ -22,6 +22,11 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             await Task.FromResult(Process.Start(Fickles.BuyCoffeeUrl)).ConfigureAwait(false);
         }
 
+        internal static async Task HoemePage()
+        {
+            await Task.FromResult(Process.Start(Fickles.HomePageUrl)).ConfigureAwait(false);
+        }
+
         internal static async Task GetPotential()
         {
             await new SlideMasterDownsizer().DownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizePotential).ConfigureAwait(false);

@@ -88,6 +88,11 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             settings.Reset();
         }
 
+        public void About(Office.IRibbonControl control)
+        {
+            new AboutBox().ShowDialog();
+        }
+
         private void Default_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
             var propertyName = e.PropertyName;

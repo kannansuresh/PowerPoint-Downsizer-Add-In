@@ -40,6 +40,13 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             image: "FunctionsLogicalInsertGallery"
         );
 
+        private static readonly RibbonControlProperties About = new RibbonControlProperties
+        (
+            label: "About",
+            description: "About Downsizer Add-In.",
+            image: "Info"
+        );
+
         private static readonly RibbonControlProperties Coffee = new RibbonControlProperties
         (
             label: "Buy a Coffee!",
@@ -61,6 +68,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             ["HideTab"] = HideTab,
             ["RevealTab"] = RevealTab,
             ["Help"] = Help,
+            ["About"] = About,
             ["Coffee"] = Coffee,
             ["HideCoffee"] = HideCoffee
         };

@@ -11,6 +11,7 @@
         public const string HideTabLabel = "Hide the Downsizer tab.";
         public const string UnhideTabLabel = "Show the Downsizer tab.";
 
+        public const string HomePageUrl = "https://aneejian.com";
         public const string BuyCoffeeUrl = "https://www.buymeacoffee.com/aneejian";
         public const string HelpUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer/";
     }
