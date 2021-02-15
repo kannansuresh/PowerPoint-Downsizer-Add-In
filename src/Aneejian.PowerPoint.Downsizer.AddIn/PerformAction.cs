@@ -35,7 +35,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         internal static string GetProperty(string tag, ControlProperties property)
         {
-            return RibbonControlValues.GetControlProperty(tag, property);
+            return new RibbonControlValues().GetControlProperty(tag, property);
         }
 
         private static void IncrementUsageCounter()

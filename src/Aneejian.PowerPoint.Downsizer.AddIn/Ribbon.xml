@@ -21,7 +21,7 @@
           <splitButton id="SplitBtnCoffee" getVisible="GetCoffeeVisibility" size="large">
             <button id="BtnCoffee" onAction="Coffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Coffee" />
             <menu id="SplitBtnCoffee_Menu" itemSize="large">
-              <button id="BtnHideCoffee" onAction="HideCoffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="HideCoffee" />
+              <button id="BtnHideCoffee" onAction="HideCoffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="HideCoffee" getSupertip="GetSuperTip" />
             </menu>
           </splitButton>
         </group>
@@ -35,7 +35,7 @@
 
               <button id="BtnPotentialInView" onAction="GetDownsizePotential" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Potential" />
 
-              <menuSeparator></menuSeparator>
+              <menuSeparator id="MenuSeparator1" />
 
               <button id="BtnHideInView" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Hide" />
 

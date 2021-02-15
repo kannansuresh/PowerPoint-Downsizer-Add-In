@@ -32,6 +32,10 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         private readonly Properties.Settings settings = Properties.Settings.Default;
 
+        private readonly List<string> coffeeButtons = new List<string>() { "BtnCoffeeInView", "BtnCoffeeInSlideMaster", "BtnHideCoffee", "BtnCoffee", "SplitBtnCoffee" };
+
+        private readonly List<string> tabHideOrRevealButtons = new List<string>() { "TabDownsizer", "BtnHideInView", "BtnHideInSlideMaster" };
+
         public Ribbon()
         {
         }
@@ -95,17 +99,28 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         private void Default_PropertyChanged(object sender, System.ComponentModel.PropertyChangedEventArgs e)
         {
-            var propertyName = e.PropertyName;
+            switch (e.PropertyName)
+            {
+                case nameof(settings.ShowCoffeeButton):
+                    {
+                        coffeeButtons.ForEach(RefreshRibbonControl);
+                        break;
+                    }
 
-            if (propertyName == nameof(Properties.Settings.ShowCoffeeButton))
-            {
-                List<string> coffeeButtons = new List<string>() { "SplitBtnCoffee", "BtnCoffeeInView", "BtnCoffeeInSlideMaster" };
-                coffeeButtons.ForEach(RefreshRibbonControl);
-            }
-            else if (propertyName == nameof(Properties.Settings.ShowDownsizerTab))
-            {
-                List<string> tabHideOrRevealButtons = new List<string>() { "TabDownsizer", "BtnHideInView", "BtnHideInSlideMaster" };
-                tabHideOrRevealButtons.ForEach(RefreshRibbonControl);
+                case nameof(settings.ShowDownsizerTab):
+                    {
+                        tabHideOrRevealButtons.ForEach(RefreshRibbonControl);
+                        break;
+                    }
+
+                case nameof(settings.UsageCounter):
+                    {
+                        if (settings.ShowCoffeeButton)
+                        {
+                            coffeeButtons.ForEach(RefreshRibbonControl);
+                        }
+                        break;
+                    }
             }
         }
 
@@ -136,22 +151,22 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public string GetImage(Office.IRibbonControl control)
         {
-            return RibbonControlValues.GetControlProperty(control.Tag, ControlProperties.Image);
+            return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Image);
         }
 
         public string GetDescription(Office.IRibbonControl control)
         {
-            return RibbonControlValues.GetControlProperty(control.Tag, ControlProperties.Description);
+            return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Description);
         }
 
         public string GetScreentip(Office.IRibbonControl control)
         {
-            return RibbonControlValues.GetControlProperty(control.Tag, ControlProperties.Screentip);
+            return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Screentip);
         }
 
         public string GetSupertip(Office.IRibbonControl control)
         {
-            return RibbonControlValues.GetControlProperty(control.Tag, ControlProperties.Supertip);
+            return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Supertip);
         }
 
         #endregion Ribbon Callbacks
