@@ -50,9 +50,9 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int UsageCounter {
+        public ulong UsageCounter {
             get {
-                return ((int)(this["UsageCounter"]));
+                return ((ulong)(this["UsageCounter"]));
             }
             set {
                 this["UsageCounter"] = value;
@@ -65,6 +65,42 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
         public int RevealCoffeButtonThreshold {
             get {
                 return ((int)(this["RevealCoffeButtonThreshold"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool AlreadyDonated {
+            get {
+                return ((bool)(this["AlreadyDonated"]));
+            }
+            set {
+                this["AlreadyDonated"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public uint CoffeeHiddenSinceCounter {
+            get {
+                return ((uint)(this["CoffeeHiddenSinceCounter"]));
+            }
+            set {
+                this["CoffeeHiddenSinceCounter"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1")]
+        public int CoffeeHideCounter {
+            get {
+                return ((int)(this["CoffeeHideCounter"]));
+            }
+            set {
+                this["CoffeeHideCounter"] = value;
             }
         }
     }

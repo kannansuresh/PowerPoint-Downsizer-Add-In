@@ -79,11 +79,9 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             }
         }
 
-        public void HideCoffee(Office.IRibbonControl control)
+        public async void HideCoffee(Office.IRibbonControl control)
         {
-            settings.ShowCoffeeButton = false;
-            settings.UsageCounter = 0;
-            settings.Save();
+            await Reporter.ReportHideCoffee().ConfigureAwait(false);
         }
 
         public async void Help(Office.IRibbonControl control)
@@ -119,6 +117,14 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
                         {
                             coffeeButtons.ForEach(RefreshRibbonControl);
                         }
+                        else
+                        {
+                            if (!settings.AlreadyDonated && settings.UsageCounter > 0)
+                            {
+                                settings.CoffeeHiddenSinceCounter++;
+                                settings.Save();
+                            }
+                        }
                         break;
                     }
             }
@@ -141,7 +147,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public bool GetCoffeeVisibility(Office.IRibbonControl control)
         {
-            return settings.ShowCoffeeButton || settings.UsageCounter >= settings.RevealCoffeButtonThreshold;
+            return settings.ShowCoffeeButton;
         }
 
         public string GetLabel(Office.IRibbonControl control)

@@ -8,8 +8,14 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
     {
         internal static async Task DownSize()
         {
-            await new SlideMasterDownsizer().Downsize(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizeStatus).ConfigureAwait(false);
             IncrementUsageCounter();
+            await new SlideMasterDownsizer().Downsize(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizeStatus).ConfigureAwait(false);
+        }
+
+        internal static async Task GetPotential()
+        {
+            IncrementUsageCounter();
+            await new SlideMasterDownsizer().DownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizePotential).ConfigureAwait(false);
         }
 
         internal static async Task Help()
@@ -22,15 +28,9 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             await Task.FromResult(Process.Start(Fickles.BuyCoffeeUrl)).ConfigureAwait(false);
         }
 
-        internal static async Task HoemePage()
+        internal static async Task HomePage()
         {
             await Task.FromResult(Process.Start(Fickles.HomePageUrl)).ConfigureAwait(false);
-        }
-
-        internal static async Task GetPotential()
-        {
-            await new SlideMasterDownsizer().DownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizePotential).ConfigureAwait(false);
-            IncrementUsageCounter();
         }
 
         internal static string GetProperty(string tag, ControlProperties property)
@@ -40,21 +40,23 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         private static void IncrementUsageCounter()
         {
+            var settings = Properties.Settings.Default;
             try
             {
-                Properties.Settings.Default.UsageCounter++;
+                settings.UsageCounter++;
+
+                if (!settings.AlreadyDonated && settings.CoffeeHiddenSinceCounter >= settings.RevealCoffeButtonThreshold * settings.CoffeeHideCounter)
+                {
+                    settings.ShowCoffeeButton = true;
+                    settings.CoffeeHiddenSinceCounter = 0;
+                }
+
+                settings.Save();
             }
             catch (Exception)
             {
-                Properties.Settings.Default.UsageCounter = 0;
+                settings.Reset();
             }
-
-            if (Properties.Settings.Default.UsageCounter >= Properties.Settings.Default.RevealCoffeButtonThreshold)
-            {
-                Properties.Settings.Default.ShowCoffeeButton = true;
-            }
-
-            Properties.Settings.Default.Save();
         }
     }
 }

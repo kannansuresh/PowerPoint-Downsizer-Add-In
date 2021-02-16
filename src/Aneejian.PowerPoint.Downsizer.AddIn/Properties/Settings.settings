@@ -8,11 +8,20 @@
     <Setting Name="ShowCoffeeButton" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="UsageCounter" Type="System.Int32" Scope="User">
+    <Setting Name="UsageCounter" Type="System.UInt64" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="RevealCoffeButtonThreshold" Type="System.Int32" Scope="Application">
       <Value Profile="(Default)">10</Value>
+    </Setting>
+    <Setting Name="AlreadyDonated" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CoffeeHiddenSinceCounter" Type="System.UInt32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CoffeeHideCounter" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
     </Setting>
   </Settings>
 </SettingsFile>

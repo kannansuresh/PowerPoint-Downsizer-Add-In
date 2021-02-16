@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Diagnostics;
-using System.Drawing;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Aneejian.PowerPoint.Downsizer.AddIn
@@ -107,7 +99,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         private async void AneejianLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            await PerformAction.HoemePage().ConfigureAwait(false);
+            await PerformAction.HomePage().ConfigureAwait(false);
         }
 
         private async void BmcLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)

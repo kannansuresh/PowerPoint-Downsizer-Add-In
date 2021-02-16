@@ -59,7 +59,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         private readonly RibbonControlProperties HideCoffee = new RibbonControlProperties
         (
             label: "Hide Buy a Coffee button",
-            description: string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Already bought a coffee or annoyed by this button? Click to hide it from everywhere. {0}{0}The button will comeback after you have used this add-in {1} times.", Environment.NewLine, settings.RevealCoffeButtonThreshold, settings.UsageCounter),
+            description: "Already donated? Click to hide.",
+            supertip: string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Already bought a coffee or annoyed by this button? Click to hide it from everywhere. {0}{0}If you haven't donated, 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times.", Environment.NewLine, settings.RevealCoffeButtonThreshold * (settings.CoffeeHideCounter + 1), settings.UsageCounter),
             image: "WindowMinimize"
         );
 
