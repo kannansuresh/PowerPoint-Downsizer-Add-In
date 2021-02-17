@@ -27,7 +27,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             await Task.FromResult(MessageBox.Show(response.ResultMessage, caption, MessageBoxButtons.OK, msgBoxIcon)).ConfigureAwait(false);
         }
 
-        internal static async Task ReportDownsizePotential(ISlideMasterDownsizePotential potential)
+        internal static async Task ReportDownsizePotential(ISlideMasterDownsizePotential potential, bool performDownsize = true)
         {
             var anyPotential = potential.UnusedLayoutsCount > 0 || potential.UnusedMastersCount > 0;
             var msgBoxIcon = anyPotential ? MessageBoxIcon.Information : MessageBoxIcon.Exclamation;
@@ -37,11 +37,18 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
             if (anyPotential)
             {
-                message += $"{nl}{nl}Do you want to remove them now?";
-                var downsize = await Task.FromResult(MessageBox.Show(message, caption, MessageBoxButtons.YesNo, msgBoxIcon)).ConfigureAwait(false);
-                if (downsize == DialogResult.Yes)
+                if (performDownsize)
                 {
-                    _ = PerformAction.DownSize();
+                    message += $"{nl}{nl}Do you want to remove them now?";
+                    var downsize = await Task.FromResult(MessageBox.Show(message, caption, MessageBoxButtons.YesNo, msgBoxIcon, MessageBoxDefaultButton.Button2)).ConfigureAwait(false);
+                    if (downsize == DialogResult.Yes)
+                    {
+                        _ = PerformAction.DownSize();
+                    }
+                }
+                else
+                {
+                    await Task.FromResult(MessageBox.Show(message, caption, MessageBoxButtons.OK, msgBoxIcon)).ConfigureAwait(false);
                 }
             }
             else

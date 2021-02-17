@@ -15,7 +15,7 @@ namespace Aneejian.PowerPoint.Downsizer
 
         public delegate Task ReportDownsizingStatus(ISlideMasterDownsizeResponse response);
 
-        public delegate Task ReportDownsizingPotential(ISlideMasterDownsizePotential potential);
+        public delegate Task ReportDownsizingPotential(ISlideMasterDownsizePotential potential, bool performDownsize);
 
         public async Task<IResponse> Downsize(Presentation activePresentation, ReportDownsizingStatus response = null)
         {
@@ -51,7 +51,7 @@ namespace Aneejian.PowerPoint.Downsizer
             return downsizeResponse;
         }
 
-        public async Task<ISlideMasterDownsizePotential> DownsizePotential(Presentation activePresentation, ReportDownsizingPotential potential = null)
+        public async Task<ISlideMasterDownsizePotential> DownsizePotential(Presentation activePresentation, ReportDownsizingPotential potential = null, bool performDownsize = true)
         {
             var designs = activePresentation.Designs;
             List<Master> availableMasters = new List<Master>();
@@ -75,7 +75,7 @@ namespace Aneejian.PowerPoint.Downsizer
 
             if (potential != null)
             {
-                await potential(downSizePotential).ConfigureAwait(false);
+                await potential(downSizePotential, performDownsize).ConfigureAwait(false);
             }
 
             return downSizePotential;

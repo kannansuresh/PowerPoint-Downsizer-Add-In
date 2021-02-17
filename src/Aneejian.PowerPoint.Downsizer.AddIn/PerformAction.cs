@@ -12,10 +12,16 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             await new SlideMasterDownsizer().Downsize(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizeStatus).ConfigureAwait(false);
         }
 
-        internal static async Task GetPotential()
+        internal static async Task GetPotentialAndDownsize()
         {
             IncrementUsageCounter();
             await new SlideMasterDownsizer().DownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizePotential).ConfigureAwait(false);
+        }
+
+        internal static async Task GetPotential()
+        {
+            IncrementUsageCounter();
+            await new SlideMasterDownsizer().DownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizePotential, false).ConfigureAwait(false);
         }
 
         internal static async Task Help()
@@ -33,7 +39,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             await Task.FromResult(Process.Start(Fickles.HomePageUrl)).ConfigureAwait(false);
         }
 
-        internal static string GetProperty(string tag, ControlProperties property)
+        internal static object GetProperty(string tag, ControlProperties property)
         {
             return new RibbonControlValues().GetControlProperty(tag, property);
         }

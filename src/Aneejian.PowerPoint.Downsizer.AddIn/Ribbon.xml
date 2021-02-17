@@ -6,8 +6,6 @@
       <tab id="TabDownsizer" label="Downsizer" getVisible="GetTabVisibility">
         <group id="GroupDownsizer" label="Downsizer">
 
-          <button id="BtnPotential" onAction="GetDownsizePotential" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" size="large" tag="Potential" />
-
           <button id="BtnDownsize" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" size="large" tag="Downsize" />
 
           <separator id="GroupSeparator" />
@@ -33,8 +31,6 @@
             <menu id="SplitBtnDownsizeInView_Menu" itemSize="large">
               <button id="BtnDownsizeInView" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Downsize" />
 
-              <button id="BtnPotentialInView" onAction="GetDownsizePotential" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Potential" />
-
               <menuSeparator id="MenuSeparator1" />
 
               <button id="BtnHideInView" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Hide" />
@@ -52,8 +48,6 @@
             <button id="SplitBtnDownsizeInSlideMaster_Btn" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Downsize" />
             <menu id="SplitBtnDownsizeInSlideMaster_Menu" itemSize="large">
               <button id="BtnDownsizeInSlideMaster" onAction="Downsize" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Downsize" />
-
-              <button id="BtnPotentialInSlideMaster" onAction="GetDownsizePotential" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Potential" />
 
               <menuSeparator id="MenuSeparator2"></menuSeparator>
 

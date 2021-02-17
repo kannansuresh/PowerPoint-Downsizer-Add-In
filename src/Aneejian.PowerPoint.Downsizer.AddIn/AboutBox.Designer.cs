@@ -64,7 +64,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             // 
             // LogoBox
             // 
-            this.LogoBox.Image = global::Aneejian.PowerPoint.Downsizer.AddIn.Properties.Resources.downsizer_100by100;
+            this.LogoBox.Image = global::Aneejian.PowerPoint.Downsizer.AddIn.Properties.Resources.downsizerButton;
             this.LogoBox.Location = new System.Drawing.Point(3, 3);
             this.LogoBox.Name = "LogoBox";
             this.LogoBox.Size = new System.Drawing.Size(100, 100);

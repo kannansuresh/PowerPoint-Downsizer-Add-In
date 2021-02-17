@@ -66,7 +66,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public async void Downsize(Office.IRibbonControl control)
         {
-            await PerformAction.DownSize().ConfigureAwait(false);
+            await PerformAction.GetPotentialAndDownsize().ConfigureAwait(false);
         }
 
         public void HideOrReveal(Office.IRibbonControl control)
@@ -150,27 +150,27 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             return settings.ShowCoffeeButton;
         }
 
-        public string GetLabel(Office.IRibbonControl control)
+        public object GetLabel(Office.IRibbonControl control)
         {
             return PerformAction.GetProperty(control.Tag, ControlProperties.Label);
         }
 
-        public string GetImage(Office.IRibbonControl control)
+        public object GetImage(Office.IRibbonControl control)
         {
             return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Image);
         }
 
-        public string GetDescription(Office.IRibbonControl control)
+        public object GetDescription(Office.IRibbonControl control)
         {
             return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Description);
         }
 
-        public string GetScreentip(Office.IRibbonControl control)
+        public object GetScreentip(Office.IRibbonControl control)
         {
             return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Screentip);
         }
 
-        public string GetSupertip(Office.IRibbonControl control)
+        public object GetSupertip(Office.IRibbonControl control)
         {
             return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Supertip);
         }

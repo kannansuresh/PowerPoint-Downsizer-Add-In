@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 
 namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
@@ -17,14 +18,14 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         private readonly RibbonControlProperties Downsize = new RibbonControlProperties
         (
             label: "Downsize Slide Master",
-            description: "Removes unused layouts and master slides from the current presentation.",
-            image: "DeleteSlideContextual"
+            description: "Shows the number of unused layouts and master slides in the current presentation, and deletes them after user confirmation.",
+            image: new Bitmap(Properties.Resources.downsizerButton)
         );
 
         private readonly RibbonControlProperties HideTab = new RibbonControlProperties
         (
             label: "Hide Tab",
-            description: "Hides the downsizer tab from PowerPoint ribbon. You can access all downsizer functionalities from View tab.",
+            description: "Hides the downsizer tab from PowerPoint ribbon. You can access all downsizer functionalities from View tab or Slide Master tab.",
             image: "WindowHide"
         );
 
@@ -82,7 +83,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             return controlDictionary;
         }
 
-        internal string GetControlProperty(string tag, ControlProperties property)
+        internal object GetControlProperty(string tag, ControlProperties property)
         {
             if (tag == "Hide")
             {
