@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
+namespace Aneejian.PowerPoint.Downsizer.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Aneejian.PowerPoint.Downsizer.AddIn.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Aneejian.PowerPoint.Downsizer.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -67,16 +67,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
             get {
                 object obj = ResourceManager.GetObject("downsizer", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap downsizer_100by100 {
-            get {
-                object obj = ResourceManager.GetObject("downsizer_100by100", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

@@ -3,7 +3,7 @@
 "VSVersion" = "3:800"
 "ProjectType" = "8:{978C614F-708E-4E1A-B201-565925725DBA}"
 "IsWebType" = "8:FALSE"
-"ProjectName" = "8:Aneejian.PowerPoint.Downsizer.Add-in.Setup"
+"ProjectName" = "8:Aneejian.PowerPoint.Downsizer.AddIn.Installer"
 "LanguageId" = "3:1033"
 "CodePage" = "3:1252"
 "UILanguageId" = "3:1033"
@@ -15,128 +15,122 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_087B56BF48F8506C7BD010F22EBB9A35"
-        "OwnerKey" = "8:_BF8290536712FECB40D59781315E25C5"
+        "MsmKey" = "8:_32D1A1DD1EA42D5F9635D1D5C8AFE8D3"
+        "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_087B56BF48F8506C7BD010F22EBB9A35"
-        "OwnerKey" = "8:_75FD70D800004BF8A54BFA5417442FAE"
+        "MsmKey" = "8:_3D1D7C27CDEE8324AFB653FC02E7CD76"
+        "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_08E5816563DD433F809518428C2E69E4"
+        "MsmKey" = "8:_525BBF2A1AF4FABC54AAB2DA64D492A9"
+        "OwnerKey" = "8:_63AD2A75517CFF2E15B06A379DD4598F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_525BBF2A1AF4FABC54AAB2DA64D492A9"
+        "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_63AD2A75517CFF2E15B06A379DD4598F"
+        "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_63ADEFF9FD118DA9C40F0FF09CB38999"
+        "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_668BCC6B0CD6E013E48369C194124A3D"
+        "OwnerKey" = "8:_32D1A1DD1EA42D5F9635D1D5C8AFE8D3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_668BCC6B0CD6E013E48369C194124A3D"
+        "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_853C34EF815A4E68B584710230F41862"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_2E46462B00E5FEB4935D4A19CD6BEA1A"
-        "OwnerKey" = "8:_75FD70D800004BF8A54BFA5417442FAE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_3978611DA9634119ACEDBF3E97C8D6D1"
+        "MsmKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_75FD70D800004BF8A54BFA5417442FAE"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_F12A88ACD3AED773E174F098AB7EA3F1"
+        "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_7D43A6B4BA26114EB7849308EA05E675"
-        "OwnerKey" = "8:_75FD70D800004BF8A54BFA5417442FAE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_A07047912D3B49D5624116C76312C237"
-        "OwnerKey" = "8:_75FD70D800004BF8A54BFA5417442FAE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BF8290536712FECB40D59781315E25C5"
-        "OwnerKey" = "8:_75FD70D800004BF8A54BFA5417442FAE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_CEA47EA0B33199B4518904B3C0850BF1"
-        "OwnerKey" = "8:_F7AF690B81612103481E80D49BA8C4A5"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_CEA47EA0B33199B4518904B3C0850BF1"
-        "OwnerKey" = "8:_75FD70D800004BF8A54BFA5417442FAE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_F7AF690B81612103481E80D49BA8C4A5"
-        "OwnerKey" = "8:_75FD70D800004BF8A54BFA5417442FAE"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_FB92FBE39A5748CABD452A255E6AC1A4"
+        "MsmKey" = "8:_F3394A3FF9F445E9877FC79F99215736"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_75FD70D800004BF8A54BFA5417442FAE"
+        "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_2E46462B00E5FEB4935D4A19CD6BEA1A"
+        "OwnerKey" = "8:_F12A88ACD3AED773E174F098AB7EA3F1"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F7AF690B81612103481E80D49BA8C4A5"
+        "OwnerKey" = "8:_32D1A1DD1EA42D5F9635D1D5C8AFE8D3"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_CEA47EA0B33199B4518904B3C0850BF1"
+        "OwnerKey" = "8:_668BCC6B0CD6E013E48369C194124A3D"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7D43A6B4BA26114EB7849308EA05E675"
+        "OwnerKey" = "8:_3D1D7C27CDEE8324AFB653FC02E7CD76"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BF8290536712FECB40D59781315E25C5"
+        "OwnerKey" = "8:_63AD2A75517CFF2E15B06A379DD4598F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_087B56BF48F8506C7BD010F22EBB9A35"
+        "OwnerKey" = "8:_525BBF2A1AF4FABC54AAB2DA64D492A9"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_A07047912D3B49D5624116C76312C237"
+        "OwnerKey" = "8:_63ADEFF9FD118DA9C40F0FF09CB38999"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -147,7 +141,7 @@
         "DisplayName" = "8:Debug"
         "IsDebugOnly" = "11:TRUE"
         "IsReleaseOnly" = "11:FALSE"
-        "OutputFilename" = "8:Debug\\Aneejian.PowerPoint.Downsizer.Add-in.Setup.msi"
+        "OutputFilename" = "8:Debug\\Aneejian.PowerPoint.Downsizer.AddIn.Installer.msi"
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
@@ -164,14 +158,6 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
-                "Items"
-                {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
-                    {
-                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
-                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
-                    }
-                }
             }
         }
         "Release"
@@ -183,7 +169,7 @@
         "PackageFilesAs" = "3:2"
         "PackageFileSize" = "3:-2147483648"
         "CabType" = "3:1"
-        "Compression" = "3:3"
+        "Compression" = "3:2"
         "SignOutput" = "11:FALSE"
         "CertificateFile" = "8:"
         "PrivateKeyFile" = "8:"
@@ -227,7 +213,7 @@
         {
             "LaunchCondition"
             {
-                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_7F9553E941754F4EA3B9908D14F211AB"
+                "{A06ECF26-33A3-4562-8140-9B0E340D4F24}:_30356FE0C6364ED8A5F58B14799AC7C1"
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
@@ -239,240 +225,14 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_087B56BF48F8506C7BD010F22EBB9A35"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_087B56BF48F8506C7BD010F22EBB9A35"
-                    {
-                    "Name" = "8:Microsoft.Office.Tools.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Microsoft.Office.Tools.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_08E5816563DD433F809518428C2E69E4"
-            {
-            "SourcePath" = "8:..\\Aneejian.PowerPoint.Downsizer.AddIn\\bin\\Release\\Aneejian.PowerPoint.Downsizer.AddIn.dll.manifest"
-            "TargetName" = "8:Aneejian.PowerPoint.Downsizer.AddIn.dll.manifest"
-            "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_2E46462B00E5FEB4935D4A19CD6BEA1A"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Aneejian.PowerPoint.Downsizer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=39974dc4a7653f09, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_2E46462B00E5FEB4935D4A19CD6BEA1A"
-                    {
-                    "Name" = "8:Aneejian.PowerPoint.Downsizer.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Aneejian.PowerPoint.Downsizer.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_3978611DA9634119ACEDBF3E97C8D6D1"
-            {
-            "SourcePath" = "8:..\\Aneejian.PowerPoint.Downsizer.AddIn\\bin\\Release\\downsizer.ico"
-            "TargetName" = "8:downsizer.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7D43A6B4BA26114EB7849308EA05E675"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools.Common.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_7D43A6B4BA26114EB7849308EA05E675"
-                    {
-                    "Name" = "8:Microsoft.Office.Tools.Common.v4.0.Utilities.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Microsoft.Office.Tools.Common.v4.0.Utilities.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A07047912D3B49D5624116C76312C237"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-                "ScatterAssemblies"
-                {
-                    "_A07047912D3B49D5624116C76312C237"
-                    {
-                    "Name" = "8:stdole.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:stdole.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_BF8290536712FECB40D59781315E25C5"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_BF8290536712FECB40D59781315E25C5"
-                    {
-                    "Name" = "8:Microsoft.Office.Tools.Common.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Microsoft.Office.Tools.Common.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_CEA47EA0B33199B4518904B3C0850BF1"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_CEA47EA0B33199B4518904B3C0850BF1"
-                    {
-                    "Name" = "8:Microsoft.VisualStudio.Tools.Applications.Runtime.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Microsoft.VisualStudio.Tools.Applications.Runtime.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:TRUE"
-            "IsDependency" = "11:TRUE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F7AF690B81612103481E80D49BA8C4A5"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_32D1A1DD1EA42D5F9635D1D5C8AFE8D3"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools.v4.0.Framework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_F7AF690B81612103481E80D49BA8C4A5"
+                    "_32D1A1DD1EA42D5F9635D1D5C8AFE8D3"
                     {
                     "Name" = "8:Microsoft.Office.Tools.v4.0.Framework.dll"
                     "Attributes" = "3:512"
@@ -481,7 +241,7 @@
             "SourcePath" = "8:Microsoft.Office.Tools.v4.0.Framework.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -496,12 +256,218 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FB92FBE39A5748CABD452A255E6AC1A4"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_3D1D7C27CDEE8324AFB653FC02E7CD76"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools.Common.v4.0.Utilities, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_3D1D7C27CDEE8324AFB653FC02E7CD76"
+                    {
+                    "Name" = "8:Microsoft.Office.Tools.Common.v4.0.Utilities.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Office.Tools.Common.v4.0.Utilities.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_525BBF2A1AF4FABC54AAB2DA64D492A9"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_525BBF2A1AF4FABC54AAB2DA64D492A9"
+                    {
+                    "Name" = "8:Microsoft.Office.Tools.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Office.Tools.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_63AD2A75517CFF2E15B06A379DD4598F"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Office.Tools.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_63AD2A75517CFF2E15B06A379DD4598F"
+                    {
+                    "Name" = "8:Microsoft.Office.Tools.Common.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Office.Tools.Common.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_63ADEFF9FD118DA9C40F0FF09CB38999"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:stdole, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+                "ScatterAssemblies"
+                {
+                    "_63ADEFF9FD118DA9C40F0FF09CB38999"
+                    {
+                    "Name" = "8:stdole.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:stdole.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_668BCC6B0CD6E013E48369C194124A3D"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.VisualStudio.Tools.Applications.Runtime, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_668BCC6B0CD6E013E48369C194124A3D"
+                    {
+                    "Name" = "8:Microsoft.VisualStudio.Tools.Applications.Runtime.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.VisualStudio.Tools.Applications.Runtime.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_853C34EF815A4E68B584710230F41862"
+            {
+            "SourcePath" = "8:..\\Aneejian.PowerPoint.Downsizer.AddIn\\bin\\Release\\Aneejian.PowerPoint.Downsizer.AddIn.dll.manifest"
+            "TargetName" = "8:Aneejian.PowerPoint.Downsizer.AddIn.dll.manifest"
+            "Tag" = "8:"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F12A88ACD3AED773E174F098AB7EA3F1"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Aneejian.PowerPoint.Downsizer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=39974dc4a7653f09, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_F12A88ACD3AED773E174F098AB7EA3F1"
+                    {
+                    "Name" = "8:Aneejian.PowerPoint.Downsizer.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Aneejian.PowerPoint.Downsizer.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F3394A3FF9F445E9877FC79F99215736"
             {
             "SourcePath" = "8:..\\Aneejian.PowerPoint.Downsizer.AddIn\\bin\\Release\\Aneejian.PowerPoint.Downsizer.AddIn.vsto"
             "TargetName" = "8:Aneejian.PowerPoint.Downsizer.AddIn.vsto"
             "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -522,18 +488,7 @@
         }
         "Folder"
         {
-            "{1525181F-901A-416C-8A58-119130FE478E}:_78307623CDA240548744E18969802113"
-            {
-            "Name" = "8:#1919"
-            "AlwaysCreate" = "11:FALSE"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Property" = "8:ProgramMenuFolder"
-                "Folders"
-                {
-                }
-            }
-            "{1525181F-901A-416C-8A58-119130FE478E}:_84939C56463A4B9AB086B774EAD827AF"
+            "{1525181F-901A-416C-8A58-119130FE478E}:_30821C1B770546AAB2255A4C9F74A8A7"
             {
             "Name" = "8:#1916"
             "AlwaysCreate" = "11:FALSE"
@@ -544,7 +499,7 @@
                 {
                 }
             }
-            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_903BFE7B5FF340288394A804BE9C66C4"
+            "{3C67513D-01DD-4637-8A68-80971EB9504F}:_3F7786D8C4934093AD4C42330D43D76E"
             {
             "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
             "Name" = "8:#1925"
@@ -556,10 +511,21 @@
                 {
                 }
             }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_4C52990A638C45D7A3BB740159D04AC9"
+            {
+            "Name" = "8:#1919"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:ProgramMenuFolder"
+                "Folders"
+                {
+                }
+            }
         }
         "LaunchCondition"
         {
-            "{836E08B8-0285-4809-BA42-01DB6754A45D}:_0B18389D2B384B9D83F6D8C865F6E8CC"
+            "{836E08B8-0285-4809-BA42-01DB6754A45D}:_74E135F748CF4E2A92DBE6F5E8A33B63"
             {
             "Name" = "8:Verify VSTO 2010 Runtime availability"
             "Condition" = "8:VSTORUNTIMEREDIST >=\"10.0.30319\" OR OFFICERUNTIME>=\"10.0.21022\""
@@ -569,21 +535,21 @@
         }
         "Locator"
         {
-            "{CF66B7F7-B7DA-4B08-A67A-233430638C9C}:_5856DD55CD894B7C9293609EA33F9531"
-            {
-            "Name" = "8:Search for Office VSTO Runtime"
-            "Root" = "2:1"
-            "RegKey" = "8:SOFTWARE\\Microsoft\\VSTO Runtime Setup\\v4"
-            "Value" = "8:Version"
-            "Property" = "8:OFFICERUNTIME"
-            }
-            "{CF66B7F7-B7DA-4B08-A67A-233430638C9C}:_A2776D4080F44ABD8DFA33E718F8E5F1"
+            "{CF66B7F7-B7DA-4B08-A67A-233430638C9C}:_7CCD723CCFFC4E358B01F71B2098BE32"
             {
             "Name" = "8:Search for VSTO 2010 Runtime"
             "Root" = "2:1"
             "RegKey" = "8:SOFTWARE\\Microsoft\\VSTO Runtime Setup\\v4R"
             "Value" = "8:Version"
             "Property" = "8:VSTORUNTIMEREDIST"
+            }
+            "{CF66B7F7-B7DA-4B08-A67A-233430638C9C}:_C149E08DE66B450A8FF949810B9DB238"
+            {
+            "Name" = "8:Search for Office VSTO Runtime"
+            "Root" = "2:1"
+            "RegKey" = "8:SOFTWARE\\Microsoft\\VSTO Runtime Setup\\v4"
+            "Value" = "8:Version"
+            "Property" = "8:OFFICERUNTIME"
             }
         }
         "MsiBootstrapper"
@@ -595,9 +561,9 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PowerPoint Downsizer Add-in"
-        "ProductCode" = "8:{5057ECC0-00E0-42BB-AB26-783D6683681D}"
-        "PackageCode" = "8:{919A87EF-D098-4593-B847-619952B80991}"
-        "UpgradeCode" = "8:{308110B3-1808-4E14-9EAA-D116FD0A2A92}"
+        "ProductCode" = "8:{917DC3B0-2760-471C-AA84-F9AD54E35A8F}"
+        "PackageCode" = "8:{9F3C8463-460C-4531-B831-90A6D75881CB}"
+        "UpgradeCode" = "8:{A69F4B07-E0E4-4110-9F4C-EE0A5BC1D62B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
@@ -608,13 +574,13 @@
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://aneejian.com"
         "Title" = "8:PowerPoint Downsizer Add-in"
-        "Subject" = "8:Add-In to downsize PowerPoint presentations by removing unused layouts and master slides."
+        "Subject" = "8:PowerPoint Downsizer Add-in"
         "ARPCONTACT" = "8:Aneejian"
         "Keywords" = "8:PowerPoint, Add-In, addin, optimize-size, addins, downsize"
         "ARPCOMMENTS" = "8:Add-In to downsize PowerPoint presentations by removing unused layouts and master slides."
         "ARPURLINFOABOUT" = "8:https://aneejian.com"
-        "ARPPRODUCTICON" = "8:_3978611DA9634119ACEDBF3E97C8D6D1"
-        "ARPIconIndex" = "3:0"
+        "ARPPRODUCTICON" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
+        "ARPIconIndex" = "3:32512"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
         "TargetPlatform" = "3:0"
@@ -628,7 +594,7 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_9E03AA7BD4324E3CAA2C4E9C186FC3D4"
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_97391F397E38496EA09111B10EC86296"
                     {
                     "Name" = "8:Software"
                     "Condition" = "8:"
@@ -637,20 +603,6 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_BB2B00BE642A4B339B3D39D8840BC96C"
-                            {
-                            "Name" = "8:[Manufacturer]"
-                            "Condition" = "8:"
-                            "AlwaysCreate" = "11:FALSE"
-                            "DeleteAtUninstall" = "11:FALSE"
-                            "Transitive" = "11:FALSE"
-                                "Keys"
-                                {
-                                }
-                                "Values"
-                                {
-                                }
-                            }
                         }
                         "Values"
                         {
@@ -662,7 +614,7 @@
             {
                 "Keys"
                 {
-                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_CAABF9D76D2F40B78B87D4788BB1F1B4"
+                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_292326CA501D47B98E95834F9993E8E5"
                     {
                     "Name" = "8:Software"
                     "Condition" = "8:"
@@ -671,7 +623,7 @@
                     "Transitive" = "11:FALSE"
                         "Keys"
                         {
-                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_3487843281A14204971DC5310C6F652D"
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_A7A675A7BDFA401995F903A21AC01B3E"
                             {
                             "Name" = "8:Microsoft"
                             "Condition" = "8:"
@@ -680,7 +632,7 @@
                             "Transitive" = "11:FALSE"
                                 "Keys"
                                 {
-                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_B05856148A2E47F3BF8E18C7276FE3F5"
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_6185F6E3173A4CA1B326290FCFDA4276"
                                     {
                                     "Name" = "8:Office"
                                     "Condition" = "8:"
@@ -689,7 +641,7 @@
                                     "Transitive" = "11:FALSE"
                                         "Keys"
                                         {
-                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_6F830E75E2A24461A1D13B511E9EB5AC"
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_25C2E6638BDE4F18956AA3592BCDA096"
                                             {
                                             "Name" = "8:PowerPoint"
                                             "Condition" = "8:"
@@ -698,7 +650,7 @@
                                             "Transitive" = "11:FALSE"
                                                 "Keys"
                                                 {
-                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_FC5FECAA902B46EF94633C8845658ECE"
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_6E00AA3CD6B54828A7A161CA98A192A2"
                                                     {
                                                     "Name" = "8:Addins"
                                                     "Condition" = "8:"
@@ -707,7 +659,7 @@
                                                     "Transitive" = "11:FALSE"
                                                         "Keys"
                                                         {
-                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_37342D3DD4634C94BD31BC42083F085B"
+                                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_B795C40602464B6E86C6A17DC81A4E37"
                                                             {
                                                             "Name" = "8:Aneejian.PowerPoint.Downsizer.AddIn"
                                                             "Condition" = "8:"
@@ -719,15 +671,15 @@
                                                                 }
                                                                 "Values"
                                                                 {
-                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_2A494E7003C345189D4CC789C660FEE8"
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_029F7E40D3CE40AA86B0A355EA84032C"
                                                                     {
-                                                                    "Name" = "8:Description"
+                                                                    "Name" = "8:FriendlyName"
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:Add-In to downsize PowerPoint presentations by removing unused layouts and master slides."
+                                                                    "Value" = "8:PowerPoint Downsizer Add-In"
                                                                     }
-                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_89DEC367180F4D40B59F286050A2E4A7"
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_4700366153994B07A28EA25893FEFE87"
                                                                     {
                                                                     "Name" = "8:LoadBehavior"
                                                                     "Condition" = "8:"
@@ -735,15 +687,7 @@
                                                                     "ValueTypes" = "3:3"
                                                                     "Value" = "3:3"
                                                                     }
-                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_98D8BAD7382D4501B4D51899E6E49065"
-                                                                    {
-                                                                    "Name" = "8:Publisher"
-                                                                    "Condition" = "8:"
-                                                                    "Transitive" = "11:FALSE"
-                                                                    "ValueTypes" = "3:1"
-                                                                    "Value" = "8:Aneejian"
-                                                                    }
-                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_9C11120333C74735AAC0FD8EDF8736E5"
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_A7D1C57EAC8D477F90897807B93E5E44"
                                                                     {
                                                                     "Name" = "8:Manifest"
                                                                     "Condition" = "8:"
@@ -751,13 +695,21 @@
                                                                     "ValueTypes" = "3:1"
                                                                     "Value" = "8:file:///[TARGETDIR]Aneejian.PowerPoint.Downsizer.AddIn.vsto|vstolocal"
                                                                     }
-                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_A7A0F2DC26084123A3218E34885F8CB0"
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_E1D1531E19684E45887B23D9EC3E1FDF"
                                                                     {
-                                                                    "Name" = "8:Friendly Name"
+                                                                    "Name" = "8:Description"
                                                                     "Condition" = "8:"
                                                                     "Transitive" = "11:FALSE"
                                                                     "ValueTypes" = "3:1"
-                                                                    "Value" = "8:PowerPoint Downsizer Add-In"
+                                                                    "Value" = "8:Add-In to downsize PowerPoint presentations by removing unused layouts and master slides."
+                                                                    }
+                                                                    "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_F4AC2438A6F44CF787B1CA00D006F268"
+                                                                    {
+                                                                    "Name" = "8:Publisher"
+                                                                    "Condition" = "8:"
+                                                                    "Transitive" = "11:FALSE"
+                                                                    "ValueTypes" = "3:1"
+                                                                    "Value" = "8:Aneejian"
                                                                     }
                                                                 }
                                                             }
@@ -815,128 +767,20 @@
         }
         "UserInterface"
         {
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_1F3BB79114AE46C2BD6C1459E943228C"
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_07AC38643CBA447DAF4755363D46EA3B"
             {
-            "Name" = "8:#1900"
-            "Sequence" = "3:1"
-            "Attributes" = "3:1"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_6BEC9AF4702E4DEF99FA4571152152E5"
-                    {
-                    "Sequence" = "3:200"
-                    "DisplayName" = "8:Installation Folder"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "InstallAllUsersVisible"
-                            {
-                            "Name" = "8:InstallAllUsersVisible"
-                            "DisplayName" = "8:#1059"
-                            "Description" = "8:#1159"
-                            "Type" = "3:5"
-                            "ContextData" = "8:1;True=1;False=0"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:0"
-                            "Value" = "3:1"
-                            "DefaultValue" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_7274E337092C4D3BB1B4949A9C92A4A7"
-                    {
-                    "Sequence" = "3:300"
-                    "DisplayName" = "8:Confirm Installation"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_BD7D95986BCD43EC96B0045BCEA88EB2"
-                    {
-                    "Sequence" = "3:100"
-                    "DisplayName" = "8:Welcome"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "CopyrightWarning"
-                            {
-                            "Name" = "8:CopyrightWarning"
-                            "DisplayName" = "8:#1002"
-                            "Description" = "8:#1102"
-                            "Type" = "3:3"
-                            "ContextData" = "8:"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1202"
-                            "DefaultValue" = "8:#1202"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "Welcome"
-                            {
-                            "Name" = "8:Welcome"
-                            "DisplayName" = "8:#1003"
-                            "Description" = "8:#1103"
-                            "Type" = "3:3"
-                            "ContextData" = "8:"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1203"
-                            "DefaultValue" = "8:#1203"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                }
+            "UseDynamicProperties" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
             }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_3156E74AC43B4D74BD8F26295D205942"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_1F14B0F381504AF1BEC4A0D45DEB2685"
             {
             "Name" = "8:#1900"
             "Sequence" = "3:2"
             "Attributes" = "3:1"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_7036E994C5FE49018FB74A8551E1F1D5"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_B22501CE73E747F9B411C913E1CEC5C8"
                     {
                     "Sequence" = "3:300"
                     "DisplayName" = "8:Confirm Installation"
@@ -958,7 +802,7 @@
                             }
                         }
                     }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_DE57AC52B1614D36B5478EA06EC57CBF"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_C6AB5E678D1647EAA0AE2AF990F1250E"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:Welcome"
@@ -1006,7 +850,7 @@
                             }
                         }
                     }
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_E828108297E148F483615FF12C15FD2D"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F0BA125DFAA34DB396E6999849799109"
                     {
                     "Sequence" = "3:200"
                     "DisplayName" = "8:Installation Folder"
@@ -1030,70 +874,20 @@
                     }
                 }
             }
-            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_5887DE54845A41A985414E7DC1AF25E0"
+            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_2C83C0A5B648447A84D1A403846069F2"
             {
             "UseDynamicProperties" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "SourcePath" = "8:<VsdDialogDir>\\VsdBasicDialogs.wim"
             }
-            "{2479F3F5-0309-486D-8047-8187E2CE5BA0}:_6307622A35FB45B4B7FEFC2108C947BA"
-            {
-            "UseDynamicProperties" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "SourcePath" = "8:<VsdDialogDir>\\VsdUserInterface.wim"
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_748E3C640FB040F58A9CF9BD10AB8BA8"
-            {
-            "Name" = "8:#1901"
-            "Sequence" = "3:1"
-            "Attributes" = "3:2"
-                "Dialogs"
-                {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_49D4E9B9FE8A4A4F9E50744B263691B3"
-                    {
-                    "Sequence" = "3:100"
-                    "DisplayName" = "8:Progress"
-                    "UseDynamicProperties" = "11:TRUE"
-                    "IsDependency" = "11:FALSE"
-                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
-                        "Properties"
-                        {
-                            "BannerBitmap"
-                            {
-                            "Name" = "8:BannerBitmap"
-                            "DisplayName" = "8:#1001"
-                            "Description" = "8:#1101"
-                            "Type" = "3:8"
-                            "ContextData" = "8:Bitmap"
-                            "Attributes" = "3:4"
-                            "Setting" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                            "ShowProgress"
-                            {
-                            "Name" = "8:ShowProgress"
-                            "DisplayName" = "8:#1009"
-                            "Description" = "8:#1109"
-                            "Type" = "3:5"
-                            "ContextData" = "8:1;True=1;False=0"
-                            "Attributes" = "3:0"
-                            "Setting" = "3:0"
-                            "Value" = "3:1"
-                            "DefaultValue" = "3:1"
-                            "UsePlugInResources" = "11:TRUE"
-                            }
-                        }
-                    }
-                }
-            }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_BC40A0A4F0F2437EA8E962F167B777F8"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_35F354F4D09D4D93ABA1B3639792B015"
             {
             "Name" = "8:#1902"
             "Sequence" = "3:1"
             "Attributes" = "3:3"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_F749248A689C4F2688632749B7DD877A"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_4982FB7B97F74C579BA56534A02D7391"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:Finished"
@@ -1130,14 +924,14 @@
                     }
                 }
             }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_F7495CB8DE894851A24DF3C55F8B144E"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_48E95D0A292C46D0954B9171AC93A1FD"
             {
             "Name" = "8:#1901"
             "Sequence" = "3:2"
             "Attributes" = "3:2"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_15B57A6D038E40E393D48B4FE97FA1AB"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_7A6714EF45B04045BD11F9862BCA5B9A"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:Progress"
@@ -1174,14 +968,172 @@
                     }
                 }
             }
-            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_FAFA8ED6EE3B474F88B6A56F93528ED2"
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_87279DCA18A040819F954AFB41D131C7"
+            {
+            "Name" = "8:#1900"
+            "Sequence" = "3:1"
+            "Attributes" = "3:1"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_3373770A42D44B82A28308BB5B5DE6D9"
+                    {
+                    "Sequence" = "3:300"
+                    "DisplayName" = "8:Confirm Installation"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdConfirmDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_C1CB8C9AB11D4DD893140A3AB655652E"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Welcome"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdWelcomeDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "CopyrightWarning"
+                            {
+                            "Name" = "8:CopyrightWarning"
+                            "DisplayName" = "8:#1002"
+                            "Description" = "8:#1102"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1202"
+                            "DefaultValue" = "8:#1202"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Welcome"
+                            {
+                            "Name" = "8:Welcome"
+                            "DisplayName" = "8:#1003"
+                            "Description" = "8:#1103"
+                            "Type" = "3:3"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:1"
+                            "Value" = "8:#1203"
+                            "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_D635B98F720D4FBC81AEDA75F64C32D1"
+                    {
+                    "Sequence" = "3:200"
+                    "DisplayName" = "8:Installation Folder"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdFolderDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "InstallAllUsersVisible"
+                            {
+                            "Name" = "8:InstallAllUsersVisible"
+                            "DisplayName" = "8:#1059"
+                            "Description" = "8:#1159"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_B3897411D5E8482CBB5C069340209416"
+            {
+            "Name" = "8:#1901"
+            "Sequence" = "3:1"
+            "Attributes" = "3:2"
+                "Dialogs"
+                {
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_8CE3D8A86CAA405EA6DC3A806E357006"
+                    {
+                    "Sequence" = "3:100"
+                    "DisplayName" = "8:Progress"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdProgressDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "ShowProgress"
+                            {
+                            "Name" = "8:ShowProgress"
+                            "DisplayName" = "8:#1009"
+                            "Description" = "8:#1109"
+                            "Type" = "3:5"
+                            "ContextData" = "8:1;True=1;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:1"
+                            "DefaultValue" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                }
+            }
+            "{DF760B10-853B-4699-99F2-AFF7185B4A62}:_CE65F335F4714887B73B7B474362F340"
             {
             "Name" = "8:#1902"
             "Sequence" = "3:2"
             "Attributes" = "3:3"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_8037B8686E0D4DA78E87D8E6DE3ACA9D"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_7F77C00A9E084DD5B6CBFB56DB45AC6A"
                     {
                     "Sequence" = "3:100"
                     "DisplayName" = "8:Finished"
@@ -1211,12 +1163,12 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_75FD70D800004BF8A54BFA5417442FAE"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8E67E3CBC8BC43A28FE1564FA0C05490"
             {
             "SourcePath" = "8:..\\Aneejian.PowerPoint.Downsizer.AddIn\\obj\\Release\\Aneejian.PowerPoint.Downsizer.AddIn.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
-            "Folder" = "8:_903BFE7B5FF340288394A804BE9C66C4"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
