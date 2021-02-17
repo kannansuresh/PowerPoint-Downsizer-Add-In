@@ -75,6 +75,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_B42026947F3D4C66A631F2BF20820D67"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_F12A88ACD3AED773E174F098AB7EA3F1"
         "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
         "MsmSig" = "8:_UNDEFINED"
@@ -158,6 +164,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -431,6 +445,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_B42026947F3D4C66A631F2BF20820D67"
+            {
+            "SourcePath" = "8:..\\..\\assets\\banner.jpg"
+            "TargetName" = "8:banner.jpg"
+            "Tag" = "8:"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F12A88ACD3AED773E174F098AB7EA3F1"
             {
             "AssemblyRegister" = "3:1"
@@ -562,7 +596,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PowerPoint Downsizer Add-in"
         "ProductCode" = "8:{917DC3B0-2760-471C-AA84-F9AD54E35A8F}"
-        "PackageCode" = "8:{9F3C8463-460C-4531-B831-90A6D75881CB}"
+        "PackageCode" = "8:{93EB4C95-19DF-4183-9DDB-0E2186D7FEE2}"
         "UpgradeCode" = "8:{A69F4B07-E0E4-4110-9F4C-EE0A5BC1D62B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -797,7 +831,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_B42026947F3D4C66A631F2BF20820D67"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -819,7 +854,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_B42026947F3D4C66A631F2BF20820D67"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -830,8 +866,8 @@
                             "Type" = "3:3"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1202"
+                            "Setting" = "3:2"
+                            "Value" = "8:Copyright © 2021 Aneejian"
                             "DefaultValue" = "8:#1202"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -867,7 +903,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_B42026947F3D4C66A631F2BF20820D67"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -904,7 +941,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_B42026947F3D4C66A631F2BF20820D67"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "UpdateText"
@@ -948,7 +986,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_B42026947F3D4C66A631F2BF20820D67"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
@@ -992,7 +1031,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_B42026947F3D4C66A631F2BF20820D67"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
@@ -1014,7 +1054,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_B42026947F3D4C66A631F2BF20820D67"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "CopyrightWarning"
@@ -1025,8 +1066,8 @@
                             "Type" = "3:3"
                             "ContextData" = "8:"
                             "Attributes" = "3:0"
-                            "Setting" = "3:1"
-                            "Value" = "8:#1202"
+                            "Setting" = "3:2"
+                            "Value" = "8:Copyright © 2021 Aneejian"
                             "DefaultValue" = "8:#1202"
                             "UsePlugInResources" = "11:TRUE"
                             }
@@ -1062,7 +1103,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_B42026947F3D4C66A631F2BF20820D67"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "InstallAllUsersVisible"
@@ -1106,7 +1148,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_B42026947F3D4C66A631F2BF20820D67"
                             "UsePlugInResources" = "11:TRUE"
                             }
                             "ShowProgress"
@@ -1150,7 +1193,8 @@
                             "Type" = "3:8"
                             "ContextData" = "8:Bitmap"
                             "Attributes" = "3:4"
-                            "Setting" = "3:1"
+                            "Setting" = "3:2"
+                            "Value" = "8:_B42026947F3D4C66A631F2BF20820D67"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }
