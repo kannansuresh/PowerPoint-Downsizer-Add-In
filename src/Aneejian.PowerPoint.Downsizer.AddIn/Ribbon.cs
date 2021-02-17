@@ -87,7 +87,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         public async void Help(Office.IRibbonControl control)
         {
             await PerformAction.Help().ConfigureAwait(false);
-            settings.Reset();
         }
 
         public void About(Office.IRibbonControl control)

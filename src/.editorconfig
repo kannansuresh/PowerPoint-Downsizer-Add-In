@@ -1,12 +1,10 @@
-[Ribbon.cs]
+[*.cs]
 
 # RCS1163: Unused parameter.
 dotnet_diagnostic.RCS1163.severity = none
 
 # IDE0060: Remove unused parameter
 dotnet_diagnostic.IDE0060.severity = none
-
-[DownsizerAddIn.cs]
 
 # RCS1114: Remove redundant delegate creation.
 dotnet_diagnostic.RCS1114.severity = none
