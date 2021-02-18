@@ -29,6 +29,7 @@ var
 #include "runtimes.pas"
 #include "wizard-pages.pas"
 #include "detect-running-app.pas"
+#include "modify-installation.pas"
 
 
 {
@@ -61,26 +62,146 @@ begin
   result := IsAdmin; // or IsZeroClient;
 end;
 
-function InitializeSetup(): boolean;
-var
-  i: integer;
-begin
-  for i := 1 to ParamCount do
-  begin
-    if uppercase(ParamStr(i)) = '/UPDATE' then
-    begin
-      Log('InitializeSetup: /UPDATE switch found');
-      IsUpdate := true;
-      exePath := CloseAppNoninteractively();
-      result := true;
-    end
-  end;
+// Previous version check
 
-  if not IsUpdate then
-  begin
-    result := CloseAppInteractively();
-  end;
-end;
+Function GetNumber(Var temp: String): Integer;
+
+Var 
+  part: String;
+  pos1: Integer;
+Begin
+  If Length(temp) = 0 Then
+    Begin
+      Result := -1;
+      Exit;
+    End;
+  pos1 := Pos('.', temp);
+  If (pos1 = 0) Then
+    Begin
+      Result := StrToInt(temp);
+      temp := '';
+    End
+  Else
+    Begin
+      part := Copy(temp, 1, pos1 - 1);
+      temp := Copy(temp, pos1 + 1, Length(temp));
+      Result := StrToInt(part);
+    End;
+End;
+
+Function CompareInner(Var temp1, temp2: String): Integer;
+
+Var 
+  num1, num2: Integer;
+Begin
+  num1 := GetNumber(temp1);
+  num2 := GetNumber(temp2);
+  If (num1 = -1) Or (num2 = -1) Then
+    Begin
+      Result := 0;
+      Exit;
+    End;
+  If (num1 > num2) Then
+    Begin
+      Result := 1;
+    End
+  Else If (num1 < num2) Then
+         Begin
+           Result := -1;
+         End
+  Else
+    Begin
+      Result := CompareInner(temp1, temp2);
+    End;
+End;
+
+Function CompareVersion(str1, str2: String): Integer;
+
+Var 
+  temp1, temp2: String;
+Begin
+  temp1 := str1;
+  temp2 := str2;
+  Result := CompareInner(temp1, temp2);
+End;
+
+Procedure UninstallSoftware(vCurID, uninstaller: String);
+
+Var 
+  ErrorCode: Integer;
+Begin
+  RegQueryStringValue(HKEY_LOCAL_MACHINE,
+                      'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\'
+                      + vCurID + '_is1',
+                      'UninstallString', uninstaller);
+  ShellExec('runas', uninstaller, '/SILENT', '', SW_HIDE,
+            ewWaitUntilTerminated,
+            ErrorCode);
+End;
+
+
+Function InitializeSetup(): boolean;
+
+Var 
+  oldVersion: String;
+  uninstaller: String;
+  ErrorCode: Integer;
+  vCurID: String;
+  vCurAppName: String;
+  i: integer;
+Begin
+  vCurID := '{#SetupSetting("AppId")}';
+  vCurAppName := '{#SetupSetting("AppName")}';
+  //remove first "{" of ID
+  vCurID := Copy(vCurID, 2, Length(vCurID) - 1);
+  //
+  If RegKeyExists(HKEY_LOCAL_MACHINE,
+     'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\' + vCurID + '_is1')
+    Then
+    Begin
+      RegQueryStringValue(HKEY_LOCAL_MACHINE,
+                          'SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\'
+                          + vCurID + '_is1',
+                          'DisplayVersion', oldVersion);
+      If (CompareVersion(oldVersion, '{#SetupSetting("AppVersion")}') < 0) Then
+        Begin
+          UninstallSoftware(vCurID, uninstaller);
+          Result := True;
+        End
+      Else
+        Begin
+          If MsgBox('Version ' + oldVersion + ' of ' + vCurAppName +
+             ' is already installed. Do you want to reinstall or repair?',
+             mbConfirmation, MB_YESNO Or MB_DEFBUTTON2) = IDYES Then
+            Begin
+              UninstallSoftware(vCurID, uninstaller);
+              Result := True;
+            End
+          Else
+            Begin
+              Result := False;
+            End;
+        End;
+    End
+  Else
+    Begin
+      For i := 1 To ParamCount Do
+        Begin
+          If uppercase(ParamStr(i)) = '/UPDATE' Then
+            Begin
+              Log('InitializeSetup: /UPDATE switch found');
+              IsUpdate := true;
+              exePath := CloseAppNoninteractively();
+              result := true;
+            End
+        End;
+
+      If Not IsUpdate Then
+        Begin
+          result := CloseAppInteractively();
+        End;
+    End;
+End;
 
 procedure InitializeWizard();
 begin
