@@ -49,6 +49,7 @@ CloseApplicationsFilter=*.*
 CreateAppDir=true
 DefaultDialogFontName=Segoe UI
 DefaultDirName={code:SuggestInstallDir}
+DisableWelcomePage=no
 DisableDirPage=false
 DisableProgramGroupPage=true
 DisableReadyPage=false

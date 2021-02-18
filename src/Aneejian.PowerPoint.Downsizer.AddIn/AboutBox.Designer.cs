@@ -30,6 +30,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         private void InitializeComponent()
         {
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.BmcLink = new System.Windows.Forms.LinkLabel();
             this.LogoBox = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.labelProductName = new System.Windows.Forms.Label();
@@ -37,7 +38,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.labelVersion = new System.Windows.Forms.Label();
             this.labelCopyright = new System.Windows.Forms.Label();
             this.AneejianLink = new System.Windows.Forms.LinkLabel();
-            this.BmcLink = new System.Windows.Forms.LinkLabel();
             this.tableLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -62,6 +62,21 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.tableLayoutPanel2.Size = new System.Drawing.Size(312, 133);
             this.tableLayoutPanel2.TabIndex = 5;
             // 
+            // BmcLink
+            // 
+            this.BmcLink.AutoSize = true;
+            this.BmcLink.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.BmcLink.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BmcLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.BmcLink.Location = new System.Drawing.Point(109, 106);
+            this.BmcLink.Name = "BmcLink";
+            this.BmcLink.Size = new System.Drawing.Size(200, 17);
+            this.BmcLink.TabIndex = 9;
+            this.BmcLink.TabStop = true;
+            this.BmcLink.Text = "Buy a Coffee!";
+            this.BmcLink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BmcLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BmcLink_LinkClicked);
+            // 
             // LogoBox
             // 
             this.LogoBox.Image = global::Aneejian.PowerPoint.Downsizer.AddIn.Properties.Resources.downsizerButton;
@@ -71,6 +86,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.LogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.LogoBox.TabIndex = 6;
             this.LogoBox.TabStop = false;
+            this.LogoBox.Click += new System.EventHandler(this.LogoBox_Click);
             // 
             // tableLayoutPanel1
             // 
@@ -149,21 +165,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.AneejianLink.Text = "Visit Aneejian";
             this.AneejianLink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.AneejianLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.AneejianLink_LinkClicked);
-            // 
-            // BmcLink
-            // 
-            this.BmcLink.AutoSize = true;
-            this.BmcLink.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.BmcLink.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BmcLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.BmcLink.Location = new System.Drawing.Point(109, 106);
-            this.BmcLink.Name = "BmcLink";
-            this.BmcLink.Size = new System.Drawing.Size(200, 17);
-            this.BmcLink.TabIndex = 9;
-            this.BmcLink.TabStop = true;
-            this.BmcLink.Text = "Buy a Coffee!";
-            this.BmcLink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.BmcLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BmcLink_LinkClicked);
             // 
             // AboutBox
             // 

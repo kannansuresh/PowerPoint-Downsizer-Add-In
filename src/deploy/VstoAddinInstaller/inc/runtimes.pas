@@ -71,11 +71,22 @@ end;
 {
   Checks if the .NET 4.0 (or 4.5) runtime is installed.
   See https://msdn.microsoft.com/en-us/library/hh925568
-}
+
 function IsNetInstalled(): boolean;
 begin
   result := RegKeyExists(HKEY_LOCAL_MACHINE,
     'SOFTWARE\' + GetWowNode + 'Microsoft\NET Framework Setup\NDP\v4');
+end;
+}
+
+{
+  Checks if the target .NET framework is installed.
+  See https://msdn.microsoft.com/en-us/library/hh925568
+  See https://stackoverflow.com/a/4104226/767642
+}
+function IsNetInstalled(): boolean;
+begin
+  result := IsDotNetDetected('v4.6', 0);
 end;
 
 {

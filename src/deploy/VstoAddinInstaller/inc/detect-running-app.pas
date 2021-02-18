@@ -23,7 +23,7 @@ begin
 #elif TARGET_HOST == "powerpoint"
   { TODO: Deal with different PowerPoint versions; PP10FrameClass is for
     PowerPoint XP only... }
-  result := 'PP10FrameClass';
+  result := 'PPTFrameClass';
 #elif TARGET_HOST == "access"
   result := 'omain';
 #elif TARGET_HOST == "outlook"

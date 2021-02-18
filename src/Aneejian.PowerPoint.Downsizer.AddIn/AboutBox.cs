@@ -107,5 +107,10 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             await PerformAction.Coffee().ConfigureAwait(false);
             ActiveForm.Close();
         }
+
+        private void LogoBox_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.Reset();
+        }
     }
 }

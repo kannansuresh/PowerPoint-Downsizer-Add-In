@@ -40,7 +40,7 @@
 #include "C:\Program Files (x86)\Inno Download Plugin\idp.iss"
 
 [Files]
-Source: {#AddBackslash(SOURCEDIR)}*; DestDir: {app}; Flags: ignoreversion recursesubdirs
+Source: {#AddBackslash(SOURCEDIR)}*; Excludes: "*.pdb";  DestDir: {app}; Flags: ignoreversion recursesubdirs
 
 ; Copy the installer icon, if defined, to the uninstall files dir
 #IFDEF INSTALLER_ICO

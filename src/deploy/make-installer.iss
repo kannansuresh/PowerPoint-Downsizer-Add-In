@@ -58,8 +58,12 @@
 
 ; Target application. This is used internally by the script
 ; in order to determine the appropriate registry keys etc.,
-; and must be one of 'excel' or 'word'.
+; and must be one of 'Excel' or 'Word' or 'PowerPoint'.
 #define TARGET_HOST "powerpoint"
+
+; Target .NET Framework. This is used internally by the script
+; in order to determine whether target framework is installed.
+#define TARGET_DOTNET_FRAMEWORK "4.6"
 
 ; Specific AppID
 ; Use InnoSetup's Generate UID command from the Tools menu

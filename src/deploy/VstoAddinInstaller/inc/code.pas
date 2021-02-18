@@ -171,11 +171,13 @@ Begin
       Else
         Begin
           If MsgBox('Version ' + oldVersion + ' of ' + vCurAppName +
-             ' is already installed. Do you want to reinstall or repair?',
+             ' is already installed. Do you want to uninstall or repair?',
              mbConfirmation, MB_YESNO Or MB_DEFBUTTON2) = IDYES Then
             Begin
               UninstallSoftware(vCurID, uninstaller);
-              Result := True;
+              Result := MsgBox('Version ' + oldVersion + ' of ' + vCurAppName +
+             ' was uninstalled. Do you want to reinstall?',
+             mbConfirmation, MB_YESNO Or MB_DEFBUTTON2) = IDYES;
             End
           Else
             Begin
