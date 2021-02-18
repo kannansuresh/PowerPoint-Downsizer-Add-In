@@ -25,6 +25,7 @@ var
 #include "helpers.pas"
 #include "win32.pas"
 #include "environment.pas"
+#include "detect-dotnet.pas"
 #include "runtimes.pas"
 #include "wizard-pages.pas"
 #include "detect-running-app.pas"
@@ -57,7 +58,7 @@ end;
 }
 function ShouldShowDirPage(): boolean;
 begin
-  result := IsAdminLoggedOn; // or IsZeroClient;
+  result := IsAdmin; // or IsZeroClient;
 end;
 
 function InitializeSetup(): boolean;
@@ -171,7 +172,7 @@ begin
     if PageID = PageCannotInstall.ID then
     begin
       { Skip the warning if the user is an admin. }
-      result := IsAdminLoggedOn
+      result := IsAdmin
       if not result then
       begin
         Log('ShouldSkipPage: Warning user that required runtimes cannot be installed due to missing privileges');
