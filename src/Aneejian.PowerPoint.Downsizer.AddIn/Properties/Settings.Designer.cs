@@ -26,81 +26,235 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool ShowDownsizerTab {
+        public bool Ribbon_ShowDownsizerTab {
             get {
-                return ((bool)(this["ShowDownsizerTab"]));
+                return ((bool)(this["Ribbon_ShowDownsizerTab"]));
             }
             set {
-                this["ShowDownsizerTab"] = value;
+                this["Ribbon_ShowDownsizerTab"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool ShowCoffeeButton {
+        public bool Ribbon_ShowCoffeeButton {
             get {
-                return ((bool)(this["ShowCoffeeButton"]));
+                return ((bool)(this["Ribbon_ShowCoffeeButton"]));
             }
             set {
-                this["ShowCoffeeButton"] = value;
+                this["Ribbon_ShowCoffeeButton"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public ulong UsageCounter {
+        public ulong App_UsageCounter {
             get {
-                return ((ulong)(this["UsageCounter"]));
+                return ((ulong)(this["App_UsageCounter"]));
             }
             set {
-                this["UsageCounter"] = value;
+                this["App_UsageCounter"] = value;
             }
         }
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("10")]
-        public int RevealCoffeButtonThreshold {
+        public int Coffee_ButtonRevealThreshold {
             get {
-                return ((int)(this["RevealCoffeButtonThreshold"]));
+                return ((int)(this["Coffee_ButtonRevealThreshold"]));
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
-        public bool AlreadyDonated {
+        public bool Coffee_AlreadyBought {
             get {
-                return ((bool)(this["AlreadyDonated"]));
+                return ((bool)(this["Coffee_AlreadyBought"]));
             }
             set {
-                this["AlreadyDonated"] = value;
+                this["Coffee_AlreadyBought"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public uint CoffeeHiddenSinceCounter {
+        public uint Coffee_HiddenSinceCounter {
             get {
-                return ((uint)(this["CoffeeHiddenSinceCounter"]));
+                return ((uint)(this["Coffee_HiddenSinceCounter"]));
             }
             set {
-                this["CoffeeHiddenSinceCounter"] = value;
+                this["Coffee_HiddenSinceCounter"] = value;
             }
         }
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("1")]
-        public int CoffeeHideCounter {
+        public int Coffee_HideCounter {
             get {
-                return ((int)(this["CoffeeHideCounter"]));
+                return ((int)(this["Coffee_HideCounter"]));
             }
             set {
-                this["CoffeeHideCounter"] = value;
+                this["Coffee_HideCounter"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool Ribbon_ShowUpdateButton {
+            get {
+                return ((bool)(this["Ribbon_ShowUpdateButton"]));
+            }
+            set {
+                this["Ribbon_ShowUpdateButton"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("v3.0.0")]
+        public string App_Version {
+            get {
+                return ((string)(this["App_Version"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://aneejian.github.io/Change-Case-Excel-Add-In/update-info.txt")]
+        public string Update_CheckUrl {
+            get {
+                return ((string)(this["Update_CheckUrl"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Update_FilePath {
+            get {
+                return ((string)(this["Update_FilePath"]));
+            }
+            set {
+                this["Update_FilePath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("PowerPoint Downsizer Add-In")]
+        public string App_Name {
+            get {
+                return ((string)(this["App_Name"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Copyright ©  Aneejian 2021")]
+        public string App_Copyright {
+            get {
+                return ((string)(this["App_Copyright"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Aneejian")]
+        public string App_Company {
+            get {
+                return ((string)(this["App_Company"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Add-In to downsize PowerPoint presentations by removing unused layouts and master" +
+            " slides.")]
+        public string App_Description {
+            get {
+                return ((string)(this["App_Description"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://aneejian.com")]
+        public string App_Homepage {
+            get {
+                return ((string)(this["App_Homepage"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://www.buymeacoffee.com/aneejian")]
+        public string Coffee_Url {
+            get {
+                return ((string)(this["Coffee_Url"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://kannansuresh.github.io/PowerPoint-Downsizer/")]
+        public string App_Page {
+            get {
+                return ((string)(this["App_Page"]));
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://kannansuresh.github.io/PowerPoint-Downsizer/")]
+        public string App_Github {
+            get {
+                return ((string)(this["App_Github"]));
+            }
+            set {
+                this["App_Github"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://kannansuresh.github.io/PowerPoint-Downsizer/")]
+        public string App_Help {
+            get {
+                return ((string)(this["App_Help"]));
+            }
+            set {
+                this["App_Help"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public ulong Stat_LayoutsDeleted {
+            get {
+                return ((ulong)(this["Stat_LayoutsDeleted"]));
+            }
+            set {
+                this["Stat_LayoutsDeleted"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public ulong Stat_MastersDeleted {
+            get {
+                return ((ulong)(this["Stat_MastersDeleted"]));
+            }
+            set {
+                this["Stat_MastersDeleted"] = value;
             }
         }
     }
