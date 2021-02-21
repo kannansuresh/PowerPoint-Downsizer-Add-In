@@ -1,9 +1,9 @@
 ﻿using Microsoft.Office.Interop.PowerPoint;
 using System.Collections.Generic;
 
-namespace Aneejian.PowerPoint.Downsizer
+namespace Aneejian.PowerPoint.Downsizer.SlideMaster
 {
-    public interface ISlideMasterDownsizePotential
+    public interface IDownsizePotential
     {
         int UnusedLayoutsCount { get; }
         int UnusedMastersCount { get; }

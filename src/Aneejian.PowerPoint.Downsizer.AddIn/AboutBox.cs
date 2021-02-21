@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Reflection;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -7,7 +6,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
     public partial class AboutBox : Form
     {
-        private static readonly Properties.Settings _settings = Properties.Settings.Default;
+        private readonly Properties.Settings _settings = Properties.Settings.Default;
 
         public AboutBox()
         {
@@ -21,13 +20,13 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         private async void AneejianLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            await PerformAction.HomePage().ConfigureAwait(false);
+            await Performer.HomePage().ConfigureAwait(false);
             ActiveForm.Close();
         }
 
         private async void BmcLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            await PerformAction.Coffee().ConfigureAwait(false);
+            await Performer.Coffee().ConfigureAwait(false);
             ActiveForm.Close();
         }
 

@@ -61,12 +61,12 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public async void GetDownsizePotential(Office.IRibbonControl control)
         {
-            await PerformAction.GetPotential().ConfigureAwait(false);
+            await Performer.GetPotential().ConfigureAwait(false);
         }
 
         public async void Downsize(Office.IRibbonControl control)
         {
-            await PerformAction.GetPotentialAndDownsize().ConfigureAwait(false);
+            await Performer.GetPotentialAndDownsize().ConfigureAwait(false);
         }
 
         public void HideOrReveal(Office.IRibbonControl control)
@@ -86,12 +86,12 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public async void Help(Office.IRibbonControl control)
         {
-            await PerformAction.Help().ConfigureAwait(false);
+            await Performer.Help().ConfigureAwait(false);
         }
 
         public async void Update(Office.IRibbonControl control)
         {
-            await PerformAction.Update().ConfigureAwait(false);
+            await Performer.Update().ConfigureAwait(false);
         }
 
         public void About(Office.IRibbonControl control)
@@ -146,7 +146,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public async void Coffee(Office.IRibbonControl control)
         {
-            await PerformAction.Coffee().ConfigureAwait(false);
+            await Performer.Coffee().ConfigureAwait(false);
         }
 
         public bool GetTabVisibility(Office.IRibbonControl control)
@@ -171,27 +171,27 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public object GetLabel(Office.IRibbonControl control)
         {
-            return PerformAction.GetProperty(control.Tag, ControlProperties.Label);
+            return Performer.GetProperty(control.Tag, ControlProperties.Label);
         }
 
         public object GetImage(Office.IRibbonControl control)
         {
-            return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Image);
+            return RibbonControlValues.GetControlProperty(control.Tag, ControlProperties.Image);
         }
 
         public object GetDescription(Office.IRibbonControl control)
         {
-            return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Description);
+            return RibbonControlValues.GetControlProperty(control.Tag, ControlProperties.Description);
         }
 
         public object GetScreentip(Office.IRibbonControl control)
         {
-            return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Screentip);
+            return RibbonControlValues.GetControlProperty(control.Tag, ControlProperties.Screentip);
         }
 
         public object GetSupertip(Office.IRibbonControl control)
         {
-            return new RibbonControlValues().GetControlProperty(control.Tag, ControlProperties.Supertip);
+            return RibbonControlValues.GetControlProperty(control.Tag, ControlProperties.Supertip);
         }
 
         #endregion Ribbon Callbacks

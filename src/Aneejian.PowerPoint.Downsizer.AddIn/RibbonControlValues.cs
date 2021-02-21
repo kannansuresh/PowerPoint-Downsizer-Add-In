@@ -4,79 +4,85 @@ using System.Drawing;
 
 namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
-    internal class RibbonControlValues
+    internal static class RibbonControlValues
     {
         private static readonly Properties.Settings settings = Properties.Settings.Default;
 
-        private readonly RibbonControlProperties Potential = new RibbonControlProperties
+        private static readonly RibbonControlProperty Potential = new RibbonControlProperty
         (
             label: "Get Downsize Potential",
             description: "Gets the number of unused/deletable layouts and master slides in the current presentation.",
             image: "FileViewDigitalSignatures"
         );
 
-        private readonly RibbonControlProperties Downsize = new RibbonControlProperties
+        private static readonly RibbonControlProperty Downsize = new RibbonControlProperty
         (
             label: "Downsize",
             description: "Shows the number of unused layouts and master slides in the current presentation, and deletes them after user confirmation.",
             image: new Bitmap(Properties.Resources.downsizerButton)
         );
 
-        private readonly RibbonControlProperties HideTab = new RibbonControlProperties
+        private static readonly RibbonControlProperty HideTab = new RibbonControlProperty
         (
             label: "Hide Tab",
             description: "Hides the downsizer tab from PowerPoint ribbon. You can access all downsizer functionalities from View tab or Slide Master tab.",
             image: "WindowHide"
         );
 
-        private readonly RibbonControlProperties RevealTab = new RibbonControlProperties
+        private static readonly RibbonControlProperty RevealTab = new RibbonControlProperty
         (
             label: "Reveal Tab",
             description: "Reveal downsizer tab.",
             image: "WindowUnhide"
         );
 
-        private readonly RibbonControlProperties Help = new RibbonControlProperties
+        private static readonly RibbonControlProperty Help = new RibbonControlProperty
         (
             label: "Help",
             description: "Get help and support on Downsizer Add-In.",
             image: "FunctionsLogicalInsertGallery"
         );
 
-        private readonly RibbonControlProperties Update = new RibbonControlProperties
+        private static readonly RibbonControlProperty Update = new RibbonControlProperty
         (
             label: "Update Available",
             description: "A new version of the add-in is available. Click to download.",
             image: "ShapeDownArrow"
         );
 
-        private readonly RibbonControlProperties About = new RibbonControlProperties
+        private static readonly RibbonControlProperty About = new RibbonControlProperty
         (
             label: "About",
             description: "About Downsizer Add-In.",
             image: "Info"
         );
 
-        private readonly RibbonControlProperties Coffee = new RibbonControlProperties
-        (
-            label: "Buy a Coffee!",
-            description: $"You have used this add-in {settings.App_UsageCounter} times. {Environment.NewLine}Do you like the Downsizer Add-In? Consider buying a coffee for the developer!",
-            image: "Heart"
-        );
-
-        private readonly RibbonControlProperties HideCoffee = new RibbonControlProperties
-        (
-            label: "Hide Buy a Coffee button",
-            description: "Already donated? Click to hide.",
-            supertip: string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Already bought a coffee or annoyed by this button? Click to hide it from everywhere. {0}{0}If you haven't donated, 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times.", Environment.NewLine, settings.Coffee_ButtonRevealThreshold * (settings.Coffee_HideCounter + 1), settings.App_UsageCounter),
-            image: "WindowMinimize"
-        );
-
-        private Dictionary<string, RibbonControlProperties> ControlDictionary => GetControlDictionary();
-
-        private Dictionary<string, RibbonControlProperties> GetControlDictionary()
+        private static RibbonControlProperty GetCoffeeProperties()
         {
-            var controlDictionary = new Dictionary<string, RibbonControlProperties>()
+            return new RibbonControlProperty
+            (
+                label: "Buy a Coffee!",
+                description: $"You have used this add-in {settings.App_UsageCounter} times. {Environment.NewLine}Do you like the Downsizer Add-In? Consider buying a coffee for the developer!",
+                image: "Heart"
+            );
+        }
+
+        private static RibbonControlProperty GetHideCoffeeProperties()
+        {
+            return new RibbonControlProperty
+            (
+                label: "Hide Buy a Coffee button",
+                description: "Already donated? Click to hide.",
+                supertip: string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Already bought a coffee or annoyed by this button? Click to hide it from everywhere. {0}{0}If you haven't donated, 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times.", Environment.NewLine, settings.Coffee_ButtonRevealThreshold * (settings.Coffee_HideCounter + 1), settings.App_UsageCounter),
+                image: "WindowMinimize"
+            );
+        }
+
+        private static Dictionary<string, RibbonControlProperty> ControlDictionary => GetControlDictionary();
+
+        private static Dictionary<string, RibbonControlProperty> GetControlDictionary()
+        {
+            var controlDictionary = new Dictionary<string, RibbonControlProperty>()
             {
                 ["Potential"] = Potential,
                 ["Downsize"] = Downsize,
@@ -84,14 +90,14 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
                 ["RevealTab"] = RevealTab,
                 ["Help"] = Help,
                 ["About"] = About,
-                ["Coffee"] = Coffee,
-                ["HideCoffee"] = HideCoffee,
+                ["Coffee"] = GetCoffeeProperties(),
+                ["HideCoffee"] = GetHideCoffeeProperties(),
                 ["Update"] = Update
             };
             return controlDictionary;
         }
 
-        internal object GetControlProperty(string tag, ControlProperties property)
+        internal static object GetControlProperty(string tag, ControlProperties property)
         {
             if (tag == "Hide")
             {

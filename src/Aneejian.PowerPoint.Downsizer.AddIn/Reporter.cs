@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Aneejian.PowerPoint.Downsizer.SlideMaster;
 
 namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
     internal static class Reporter
     {
-        private const string caption = Fickles.AddInName;
+        private const string caption = Constants.AddInName;
         private static readonly string nl = Environment.NewLine;
         private static readonly Properties.Settings settings = Properties.Settings.Default;
 
-        internal static async Task ReportDownsizeStatus(ISlideMasterDownsizeResponse response)
+        internal static async Task ReportDownsizeStatus(IDownsizeResponse response)
         {
             var removedAny = response.CustomLayoutsDeleted > 0 || response.MasterSlidesDeleted > 0;
             var msgBoxIcon = MessageBoxIcon.Exclamation;
@@ -24,14 +25,14 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
                 msgBoxIcon = MessageBoxIcon.Error;
             }
 
-            await Task.FromResult(MessageBox.Show(response.ResultMessage, caption, MessageBoxButtons.OK, msgBoxIcon)).ConfigureAwait(false);
+            await Task.FromResult(MessageBox.Show(response.DownsizeResult, caption, MessageBoxButtons.OK, msgBoxIcon)).ConfigureAwait(false);
         }
 
-        internal static async Task ReportDownsizePotential(ISlideMasterDownsizePotential potential, bool performDownsize = true)
+        internal static async Task ReportDownsizePotential(IDownsizePotential potential, bool performDownsize)
         {
             var anyPotential = potential.UnusedLayoutsCount > 0 || potential.UnusedMastersCount > 0;
             var msgBoxIcon = anyPotential ? MessageBoxIcon.Information : MessageBoxIcon.Exclamation;
-            var message = anyPotential ? $"Unused layouts: {potential.UnusedLayoutsCount}{nl}Unused master slides: {potential.UnusedMastersCount}." : Fickles.NothingToRemove;
+            var message = anyPotential ? $"Unused layouts: {potential.UnusedLayoutsCount}{nl}Unused master slides: {potential.UnusedMastersCount}." : Constants.Messages.NothingToRemove;
 
             message += $"{nl}Usage counter: {settings.App_UsageCounter}{nl}";
 
@@ -43,7 +44,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
                     var downsize = await Task.FromResult(MessageBox.Show(message, caption, MessageBoxButtons.YesNo, msgBoxIcon, MessageBoxDefaultButton.Button2)).ConfigureAwait(false);
                     if (downsize == DialogResult.Yes)
                     {
-                        _ = PerformAction.DownSize();
+                        _ = Performer.DownSize(potential);
                     }
                 }
                 else

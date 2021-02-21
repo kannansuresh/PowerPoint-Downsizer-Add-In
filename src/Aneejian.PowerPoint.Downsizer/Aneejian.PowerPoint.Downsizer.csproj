@@ -60,17 +60,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Fickles.cs" />
-    <Compile Include="ISlideMasterDownsizePotential.cs" />
+    <Compile Include="..\Solution Items\GlobalAssemblyInfo.cs">
+      <Link>Properties\GlobalAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="Constants.cs" />
+    <Compile Include="SlideMaster\IDownsizePotential.cs" />
     <Compile Include="IResponse.cs" />
-    <Compile Include="ISlideMasterDownsizeResponse.cs" />
+    <Compile Include="SlideMaster\IDownsizeResponse.cs" />
+    <Compile Include="Constants.Messages.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Response.cs" />
-    <Compile Include="SlideMasterDownsizePotential.cs" />
-    <Compile Include="SlideMasterDownsizer.cs" />
-    <Compile Include="SlideMasterDownsizeResponse.cs" />
+    <Compile Include="SlideMaster\DownsizePotential.cs" />
+    <Compile Include="SlideMaster\Downsizer.cs" />
+    <Compile Include="SlideMaster\DownsizeResponse.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>Properties\.editorconfig</Link>
+    </None>
     <None Include="packages.config" />
     <None Include="PPTDownsizer.pfx" />
   </ItemGroup>

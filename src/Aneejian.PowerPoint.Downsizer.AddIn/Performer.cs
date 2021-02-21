@@ -1,29 +1,37 @@
 ﻿using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
+using Aneejian.PowerPoint.Downsizer.SlideMaster;
+using Microsoft.Office.Interop.PowerPoint;
 
 namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
-    internal static class PerformAction
+    internal static class Performer
     {
         private static readonly Properties.Settings _settings = Properties.Settings.Default;
 
-        internal static async Task DownSize()
+        internal static async Task DownSize(IDownsizePotential potential)
         {
             IncrementUsageCounter();
-            await new SlideMasterDownsizer().Downsize(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizeStatus).ConfigureAwait(false);
+            var downsizeResponse = new DownsizeResponse();
+            await new SlideMaster.Downsizer().Downsize(potential, downsizeResponse).ConfigureAwait(false);
+            _ = Reporter.ReportDownsizeStatus(downsizeResponse);
         }
 
         internal static async Task GetPotentialAndDownsize()
         {
             IncrementUsageCounter();
-            await new SlideMasterDownsizer().DownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizePotential).ConfigureAwait(false);
+            var potential = new DownsizePotential();
+            await new SlideMaster.Downsizer().GetDownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, potential).ConfigureAwait(false);
+            _ = Reporter.ReportDownsizePotential(potential, true);
         }
 
         internal static async Task GetPotential()
         {
             IncrementUsageCounter();
-            await new SlideMasterDownsizer().DownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, Reporter.ReportDownsizePotential, false).ConfigureAwait(false);
+            var potential = new DownsizePotential();
+            await new SlideMaster.Downsizer().GetDownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, potential).ConfigureAwait(false);
+            _ = Reporter.ReportDownsizePotential(potential, false);
         }
 
         internal static async Task Help()
@@ -48,7 +56,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         internal static object GetProperty(string tag, ControlProperties property)
         {
-            return new RibbonControlValues().GetControlProperty(tag, property);
+            return RibbonControlValues.GetControlProperty(tag, property);
         }
 
         private static void IncrementUsageCounter()

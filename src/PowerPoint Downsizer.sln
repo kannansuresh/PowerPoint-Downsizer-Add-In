@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B6711EA-FDD2-46BE-A146-7A4258BD3D5F}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		Solution Items\GlobalAssemblyInfo.cs = Solution Items\GlobalAssemblyInfo.cs
 	EndProjectSection
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Aneejian.PowerPoint.Downsizer.AddIn.Installer", "Aneejian.PowerPoint.Downsizer.AddIn.Installer\Aneejian.PowerPoint.Downsizer.AddIn.Installer.vdproj", "{92F8E316-75E3-4E85-9F2A-86FC88F87D7B}"

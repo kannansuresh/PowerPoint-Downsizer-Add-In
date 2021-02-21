@@ -1,6 +1,6 @@
 ﻿namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
-    internal class RibbonControlProperties
+    internal class RibbonControlProperty
     {
         public string Label { get; set; }
         public string Description { get; set; }
@@ -8,7 +8,7 @@
         public string Screentip { get; set; }
         public string Supertip { get; set; }
 
-        public RibbonControlProperties(string label, string description, object image, string screentip = null, string supertip = null)
+        public RibbonControlProperty(string label, string description, object image, string screentip = null, string supertip = null)
         {
             Label = label;
             Description = description;
