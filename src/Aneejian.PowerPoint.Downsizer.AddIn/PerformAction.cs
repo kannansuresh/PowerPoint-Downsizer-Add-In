@@ -6,6 +6,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
     internal static class PerformAction
     {
+        private static readonly Properties.Settings _settings = Properties.Settings.Default;
+
         internal static async Task DownSize()
         {
             IncrementUsageCounter();
@@ -26,17 +28,22 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         internal static async Task Help()
         {
-            await Task.FromResult(Process.Start(Fickles.HelpUrl)).ConfigureAwait(false);
+            await Task.FromResult(Process.Start(_settings.App_Help)).ConfigureAwait(false);
+        }
+
+        internal static async Task Update()
+        {
+            await Task.FromResult(Process.Start(_settings.Update_FilePath)).ConfigureAwait(false);
         }
 
         internal static async Task Coffee()
         {
-            await Task.FromResult(Process.Start(Fickles.BuyCoffeeUrl)).ConfigureAwait(false);
+            await Task.FromResult(Process.Start(_settings.Coffee_Url)).ConfigureAwait(false);
         }
 
         internal static async Task HomePage()
         {
-            await Task.FromResult(Process.Start(Fickles.HomePageUrl)).ConfigureAwait(false);
+            await Task.FromResult(Process.Start(_settings.App_Homepage)).ConfigureAwait(false);
         }
 
         internal static object GetProperty(string tag, ControlProperties property)
@@ -46,22 +53,21 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         private static void IncrementUsageCounter()
         {
-            var settings = Properties.Settings.Default;
             try
             {
-                settings.UsageCounter++;
+                _settings.App_UsageCounter++;
 
-                if (!settings.AlreadyDonated && settings.CoffeeHiddenSinceCounter >= settings.RevealCoffeButtonThreshold * settings.CoffeeHideCounter)
+                if (!_settings.Coffee_AlreadyBought && _settings.Coffee_HiddenSinceCounter >= _settings.Coffee_ButtonRevealThreshold * _settings.Coffee_HideCounter)
                 {
-                    settings.ShowCoffeeButton = true;
-                    settings.CoffeeHiddenSinceCounter = 0;
+                    _settings.Ribbon_ShowCoffeeButton = true;
+                    _settings.Coffee_HiddenSinceCounter = 0;
                 }
 
-                settings.Save();
+                _settings.Save();
             }
             catch (Exception)
             {
-                settings.Reset();
+                _settings.Reset();
             }
         }
     }

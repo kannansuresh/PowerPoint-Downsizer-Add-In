@@ -33,7 +33,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             var msgBoxIcon = anyPotential ? MessageBoxIcon.Information : MessageBoxIcon.Exclamation;
             var message = anyPotential ? $"Unused layouts: {potential.UnusedLayoutsCount}{nl}Unused master slides: {potential.UnusedMastersCount}." : Fickles.NothingToRemove;
 
-            //message += $"{nl}Usage counter: {settings.UsageCounter}{nl}Hidden counter: {settings.CoffeeHiddenSinceCounter}";
+            message += $"{nl}Usage counter: {settings.App_UsageCounter}{nl}";
 
             if (anyPotential)
             {
@@ -61,22 +61,22 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         {
             var message = $"Already bought a coffee? {nl}{nl}";
 
-            message += string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Click 'Yes' if you have already bought a coffee? {0}{0}If you haven't bought a coffee yet, the 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times after clicking 'No'.", nl, settings.RevealCoffeButtonThreshold * (settings.CoffeeHideCounter + 1), settings.UsageCounter);
+            message += string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Click 'Yes' if you have already bought a coffee? {0}{0}If you haven't bought a coffee yet, the 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times after clicking 'No'.", nl, settings.Coffee_ButtonRevealThreshold * (settings.Coffee_HideCounter + 1), settings.App_UsageCounter);
 
             var hide = await Task.FromResult(MessageBox.Show(message, caption, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3)).ConfigureAwait(false);
 
             switch (hide)
             {
                 case DialogResult.Yes:
-                    settings.AlreadyDonated = true;
-                    settings.ShowCoffeeButton = false;
+                    settings.Coffee_AlreadyBought = true;
+                    settings.Ribbon_ShowCoffeeButton = false;
                     settings.Save();
                     break;
 
                 case DialogResult.No:
-                    settings.ShowCoffeeButton = false;
-                    settings.CoffeeHiddenSinceCounter = 0;
-                    settings.CoffeeHideCounter++;
+                    settings.Ribbon_ShowCoffeeButton = false;
+                    settings.Coffee_HiddenSinceCounter = 0;
+                    settings.Coffee_HideCounter++;
                     settings.Save();
                     break;
             }

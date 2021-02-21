@@ -1,9 +1,12 @@
-﻿namespace Aneejian.PowerPoint.Downsizer.AddIn
+﻿using System.Threading.Tasks;
+
+namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
     public partial class DownsizerAddIn
     {
         private void DownsizerAddIn_Startup(object sender, System.EventArgs e)
         {
+            _ = Task.Run(() => _ = new UpdateChecker().CheckForUpdates());
         }
 
         private void DownsizerAddIn_Shutdown(object sender, System.EventArgs e)

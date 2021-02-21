@@ -71,9 +71,9 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public void HideOrReveal(Office.IRibbonControl control)
         {
-            settings.ShowDownsizerTab = !settings.ShowDownsizerTab;
+            settings.Ribbon_ShowDownsizerTab = !settings.Ribbon_ShowDownsizerTab;
             settings.Save();
-            if (settings.ShowDownsizerTab)
+            if (settings.Ribbon_ShowDownsizerTab)
             {
                 ribbon.ActivateTab("TabDownsizer");
             }
@@ -89,6 +89,11 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             await PerformAction.Help().ConfigureAwait(false);
         }
 
+        public async void Update(Office.IRibbonControl control)
+        {
+            await PerformAction.Update().ConfigureAwait(false);
+        }
+
         public void About(Office.IRibbonControl control)
         {
             new AboutBox().ShowDialog();
@@ -98,32 +103,37 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         {
             switch (e.PropertyName)
             {
-                case nameof(settings.ShowCoffeeButton):
+                case nameof(settings.Ribbon_ShowCoffeeButton):
                     {
                         coffeeButtons.ForEach(RefreshRibbonControl);
                         break;
                     }
 
-                case nameof(settings.ShowDownsizerTab):
+                case nameof(settings.Ribbon_ShowDownsizerTab):
                     {
                         tabHideOrRevealButtons.ForEach(RefreshRibbonControl);
                         break;
                     }
 
-                case nameof(settings.UsageCounter):
+                case nameof(settings.App_UsageCounter):
                     {
-                        if (settings.ShowCoffeeButton)
+                        if (settings.Ribbon_ShowCoffeeButton)
                         {
                             coffeeButtons.ForEach(RefreshRibbonControl);
                         }
                         else
                         {
-                            if (!settings.AlreadyDonated && settings.UsageCounter > 0)
+                            if (!settings.Coffee_AlreadyBought && settings.App_UsageCounter > 0)
                             {
-                                settings.CoffeeHiddenSinceCounter++;
+                                settings.Coffee_HiddenSinceCounter++;
                                 settings.Save();
                             }
                         }
+                        break;
+                    }
+                case nameof(settings.Ribbon_ShowUpdateButton):
+                    {
+                        ribbon.InvalidateControl("BtnUpdate");
                         break;
                     }
             }
@@ -141,12 +151,22 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public bool GetTabVisibility(Office.IRibbonControl control)
         {
-            return settings.ShowDownsizerTab;
+            return settings.Ribbon_ShowDownsizerTab;
+        }
+
+        public bool GetHideTabVisibility(Office.IRibbonControl control)
+        {
+            return !settings.Ribbon_ShowUpdateButton;
+        }
+
+        public bool GetUpdateVisibility(Office.IRibbonControl control)
+        {
+            return settings.Ribbon_ShowUpdateButton;
         }
 
         public bool GetCoffeeVisibility(Office.IRibbonControl control)
         {
-            return settings.ShowCoffeeButton;
+            return settings.Ribbon_ShowCoffeeButton;
         }
 
         public object GetLabel(Office.IRibbonControl control)

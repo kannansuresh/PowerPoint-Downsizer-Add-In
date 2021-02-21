@@ -10,18 +10,22 @@
 
           <separator id="GroupSeparator" />
 
-          <button id="BtnHide" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Hide" />
+          <button id="BtnHide" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Hide" getVisible="GetHideTabVisibility" />
 
           <button id="BtnHelp" onAction="Help" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Help" />
 
           <button id="BtnAbout" onAction="About" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="About" />
 
-          <splitButton id="SplitBtnCoffee" getVisible="GetCoffeeVisibility" size="large">
+          <splitButton id="SplitBtnCoffee" getVisible="GetCoffeeVisibility" size="normal">
             <button id="BtnCoffee" onAction="Coffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Coffee" />
-            <menu id="SplitBtnCoffee_Menu" itemSize="large">
+            <menu id="SplitBtnCoffee_Menu" itemSize="normal">
               <button id="BtnHideCoffee" onAction="HideCoffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="HideCoffee" getSupertip="GetSuperTip" />
             </menu>
           </splitButton>
+
+          <separator id="GroupSeparator2" getVisible="GetUpdateVisibility" />
+
+          <button id="BtnUpdate" onAction="Update" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Update" getVisible="GetUpdateVisibility" size="large" />
         </group>
       </tab>
       <tab idMso="TabView">
@@ -33,7 +37,7 @@
 
               <menuSeparator id="MenuSeparator1" />
 
-              <button id="BtnHideInView" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Hide" />
+              <button id="BtnHideInView" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Hide" getVisible="GetHideTabVisibility" />
 
               <button id="BtnHelpInView" onAction="Help" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Help" />
 
@@ -51,7 +55,7 @@
 
               <menuSeparator id="MenuSeparator2"></menuSeparator>
 
-              <button id="BtnHideInSlideMaster" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Hide" />
+              <button id="BtnHideInSlideMaster" onAction="HideOrReveal" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Hide" getVisible="GetHideTabVisibility" />
 
               <button id="BtnHelpInSlideMaster" onAction="Help" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="Help" />
 
