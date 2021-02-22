@@ -1,7 +1,7 @@
-﻿using System;
+﻿using Aneejian.PowerPoint.Downsizer.SlideMaster;
+using System;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Aneejian.PowerPoint.Downsizer.SlideMaster;
 
 namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
