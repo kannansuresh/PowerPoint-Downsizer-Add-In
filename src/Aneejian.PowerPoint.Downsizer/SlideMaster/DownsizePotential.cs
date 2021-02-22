@@ -9,13 +9,5 @@ namespace Aneejian.PowerPoint.Downsizer.SlideMaster
         public List<Master> UnusedMasters { get; set; } = new List<Master>();
         public int UnusedLayoutsCount => UnusedLayouts.Count;
         public int UnusedMastersCount => UnusedMasters.Count;
-
-        //public DownsizePotential(List<CustomLayout> unusedLayouts, List<Master> unusedMasters)
-        //{
-        //    UnusedLayouts = unusedLayouts;
-        //    UnusedMasters = unusedMasters;
-        //}
-
-        //public
     }
 }
