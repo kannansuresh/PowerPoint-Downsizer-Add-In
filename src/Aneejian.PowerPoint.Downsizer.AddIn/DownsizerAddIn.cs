@@ -6,7 +6,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
     {
         private void DownsizerAddIn_Startup(object sender, System.EventArgs e)
         {
-            _ = Task.Run(() => _ = new UpdateChecker().CheckForUpdates());
+            _ = Task.Run(() => _ = new UpdateManager().CheckForUpdates());
         }
 
         private void DownsizerAddIn_Shutdown(object sender, System.EventArgs e)

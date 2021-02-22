@@ -34,7 +34,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             var msgBoxIcon = anyPotential ? MessageBoxIcon.Information : MessageBoxIcon.Exclamation;
             var message = anyPotential ? $"Unused layouts: {potential.UnusedLayoutsCount}{nl}Unused master slides: {potential.UnusedMastersCount}." : Constants.Messages.NothingToRemove;
 
-            message += $"{nl}Usage counter: {settings.App_UsageCounter}{nl}";
+            message += $"{nl}Usage counter: {settings.Stat_UsageCounter}{nl}";
 
             if (anyPotential)
             {
@@ -58,11 +58,17 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             }
         }
 
+        internal static async Task ReportUsageStats()
+        {
+            var stats = await Task.FromResult(new UsageStats().ToString()).ConfigureAwait(false);
+            MessageBox.Show(new Form() { TopMost = true }, stats, caption, MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
         internal static async Task ReportHideCoffee()
         {
             var message = $"Already bought a coffee? {nl}{nl}";
 
-            message += string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Click 'Yes' if you have already bought a coffee? {0}{0}If you haven't bought a coffee yet, the 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times after clicking 'No'.", nl, settings.Coffee_ButtonRevealThreshold * (settings.Coffee_HideCounter + 1), settings.App_UsageCounter);
+            message += string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Click 'Yes' if you have already bought a coffee? {0}{0}If you haven't bought a coffee yet, the 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times after clicking 'No'.", nl, settings.Coffee_ButtonRevealThreshold * (settings.Coffee_HideCounter + 1), settings.Stat_UsageCounter);
 
             var hide = await Task.FromResult(MessageBox.Show(message, caption, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3)).ConfigureAwait(false);
 

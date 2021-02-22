@@ -62,7 +62,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             return new RibbonControlProperty
             (
                 label: "Buy a Coffee!",
-                description: $"You have used this add-in {settings.App_UsageCounter} times. {Environment.NewLine}Do you like the Downsizer Add-In? Consider buying a coffee for the developer!",
+                description: $"You have used this add-in {settings.Stat_UsageCounter} times. {Environment.NewLine}Do you like the Downsizer Add-In? Consider buying a coffee for the developer!",
                 image: "Heart"
             );
         }
@@ -73,7 +73,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             (
                 label: "Hide Buy a Coffee button",
                 description: "Already donated? Click to hide.",
-                supertip: string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Already bought a coffee or annoyed by this button? Click to hide it from everywhere. {0}{0}If you haven't donated, 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times.", Environment.NewLine, settings.Coffee_ButtonRevealThreshold * (settings.Coffee_HideCounter + 1), settings.App_UsageCounter),
+                supertip: string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Already bought a coffee or annoyed by this button? Click to hide it from everywhere. {0}{0}If you haven't donated, 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times.", Environment.NewLine, settings.Coffee_ButtonRevealThreshold * (settings.Coffee_HideCounter + 1), settings.Stat_UsageCounter),
                 image: "WindowMinimize"
             );
         }

@@ -11,15 +11,13 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         internal static async Task DownSize(IDownsizePotential potential)
         {
-            IncrementUsageCounter();
             var downsizeResponse = new DownsizeResponse();
-            await new SlideMaster.Downsizer().Downsize(potential, downsizeResponse).ConfigureAwait(false);
+            await new SlideMaster.Downsizer().Downsize(potential, downsizeResponse, StatsManager.UpdateStats).ConfigureAwait(false);
             _ = Reporter.ReportDownsizeStatus(downsizeResponse);
         }
 
         internal static async Task GetPotentialAndDownsize()
         {
-            IncrementUsageCounter();
             var potential = new DownsizePotential();
             await new SlideMaster.Downsizer().GetDownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, potential).ConfigureAwait(false);
             _ = Reporter.ReportDownsizePotential(potential, true);
@@ -27,7 +25,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         internal static async Task GetPotential()
         {
-            IncrementUsageCounter();
             var potential = new DownsizePotential();
             await new SlideMaster.Downsizer().GetDownsizePotential(Globals.DownsizerAddIn.Application.ActivePresentation, potential).ConfigureAwait(false);
             _ = Reporter.ReportDownsizePotential(potential, false);
@@ -56,26 +53,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         internal static object GetProperty(string tag, ControlProperties property)
         {
             return RibbonControlValues.GetControlProperty(tag, property);
-        }
-
-        private static void IncrementUsageCounter()
-        {
-            try
-            {
-                _settings.App_UsageCounter++;
-
-                if (!_settings.Coffee_AlreadyBought && _settings.Coffee_HiddenSinceCounter >= _settings.Coffee_ButtonRevealThreshold * _settings.Coffee_HideCounter)
-                {
-                    _settings.Ribbon_ShowCoffeeButton = true;
-                    _settings.Coffee_HiddenSinceCounter = 0;
-                }
-
-                _settings.Save();
-            }
-            catch (Exception)
-            {
-                _settings.Reset();
-            }
         }
     }
 }

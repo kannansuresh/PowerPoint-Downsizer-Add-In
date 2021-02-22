@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
-    internal class UpdateChecker
+    internal class UpdateManager
     {
         private static readonly Properties.Settings _settings = Properties.Settings.Default;
         private readonly string _currentVersion = _settings.App_Version;

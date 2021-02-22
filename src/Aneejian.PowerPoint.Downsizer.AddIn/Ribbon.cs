@@ -115,7 +115,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
                         break;
                     }
 
-                case nameof(settings.App_UsageCounter):
+                case nameof(settings.Stat_UsageCounter):
                     {
                         if (settings.Ribbon_ShowCoffeeButton)
                         {
@@ -123,7 +123,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
                         }
                         else
                         {
-                            if (!settings.Coffee_AlreadyBought && settings.App_UsageCounter > 0)
+                            if (!settings.Coffee_AlreadyBought && settings.Stat_UsageCounter > 0)
                             {
                                 settings.Coffee_HiddenSinceCounter++;
                                 settings.Save();
