@@ -189,6 +189,7 @@
     </Compile>
     <Compile Include="Enums.cs" />
     <Compile Include="Extensions.cs" />
+    <Compile Include="IUsageStats.cs" />
     <Compile Include="Performer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
@@ -199,7 +200,9 @@
     </Compile>
     <Compile Include="RibbonControlProperty.cs" />
     <Compile Include="RibbonControlValues.cs" />
-    <Compile Include="UpdateChecker.cs" />
+    <Compile Include="UsageStats.cs" />
+    <Compile Include="StatsManager.cs" />
+    <Compile Include="UpdateManager.cs" />
     <EmbeddedResource Include="AboutBox.resx">
       <DependentUpon>AboutBox.cs</DependentUpon>
     </EmbeddedResource>
