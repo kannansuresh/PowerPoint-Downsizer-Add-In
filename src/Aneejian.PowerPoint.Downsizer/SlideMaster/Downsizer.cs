@@ -27,12 +27,12 @@ namespace Aneejian.PowerPoint.Downsizer.SlideMaster
                 }
 
                 downsizeResponse.IsSuccess = true;
-                downsizeResponse.ResultMessage = "Successfully removed unused custom layouts and master slides.";
+                downsizeResponse.ResultMessage = Constants.Messages.SlideMasterDonwsizeSuccess;
             }
             catch (Exception e)
             {
                 downsizeResponse.Exception = e;
-                downsizeResponse.ResultMessage = "Failed to remove unused custom layouts and master slides.";
+                downsizeResponse.ResultMessage = Constants.Messages.SlideMasterDonwsizeFailed;
             }
 
             updateStat?.Invoke(downsizeResponse);
