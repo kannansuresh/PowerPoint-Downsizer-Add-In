@@ -127,7 +127,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://aneejian.github.io/Change-Case-Excel-Add-In/update-info.txt")]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://kannansuresh.github.io/PowerPoint-Downsizer/update-info.txt")]
         public string Update_CheckUrl {
             get {
                 return ((string)(this["Update_CheckUrl"]));
