@@ -16,6 +16,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             labelVersion.Text = string.Format("Version {0}", _settings.App_Version.Replace("v", ""));
             labelCopyright.Text = _settings.App_Copyright;
             labelCompanyName.Text = _settings.App_Company;
+            rtbUsageStats.Text = new UsageStats().ToString();
         }
 
         private async void AneejianLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -32,9 +33,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         private void LogoBox_Click(object sender, EventArgs e)
         {
-            //Properties.Settings.Default.Reset();
-            _ = Task.Run(() => _ = new UpdateChecker().CheckForUpdates());
             ActiveForm.Close();
+            _ = Task.Run(() => Reporter.ReportUsageStats()).ConfigureAwait(false);
         }
     }
 }

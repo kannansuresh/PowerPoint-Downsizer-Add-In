@@ -38,9 +38,12 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.labelCompanyName = new System.Windows.Forms.Label();
             this.AneejianLink = new System.Windows.Forms.LinkLabel();
             this.BmcLink = new System.Windows.Forms.LinkLabel();
+            this.rtbUsageStats = new System.Windows.Forms.RichTextBox();
+            this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).BeginInit();
             this.flowLayoutPanel2.SuspendLayout();
+            this.flowLayoutPanel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // flowLayoutPanel1
@@ -49,7 +52,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.flowLayoutPanel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.flowLayoutPanel1.Controls.Add(this.LogoBox);
             this.flowLayoutPanel1.Controls.Add(this.flowLayoutPanel2);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 3);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(277, 156);
             this.flowLayoutPanel1.TabIndex = 12;
@@ -57,6 +60,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             // LogoBox
             // 
             this.LogoBox.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.LogoBox.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.LogoBox.Enabled = false;
             this.LogoBox.Image = global::Aneejian.PowerPoint.Downsizer.AddIn.Properties.Resources.banner;
             this.LogoBox.Location = new System.Drawing.Point(3, 3);
             this.LogoBox.Name = "LogoBox";
@@ -64,6 +69,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.LogoBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.LogoBox.TabIndex = 9;
             this.LogoBox.TabStop = false;
+            this.LogoBox.Click += new System.EventHandler(this.LogoBox_Click);
             // 
             // flowLayoutPanel2
             // 
@@ -147,10 +153,12 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.AneejianLink.TabStop = true;
             this.AneejianLink.Text = "Visit Aneejian";
             this.AneejianLink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.AneejianLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.AneejianLink_LinkClicked);
             // 
             // BmcLink
             // 
             this.BmcLink.AutoSize = true;
+            this.BmcLink.Cursor = System.Windows.Forms.Cursors.Hand;
             this.BmcLink.Dock = System.Windows.Forms.DockStyle.Left;
             this.BmcLink.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BmcLink.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
@@ -163,6 +171,32 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.BmcLink.TabStop = true;
             this.BmcLink.Text = "Buy a Coffee!";
             this.BmcLink.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.BmcLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.BmcLink_LinkClicked);
+            // 
+            // rtbUsageStats
+            // 
+            this.rtbUsageStats.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtbUsageStats.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.rtbUsageStats.Enabled = false;
+            this.rtbUsageStats.Location = new System.Drawing.Point(3, 165);
+            this.rtbUsageStats.Name = "rtbUsageStats";
+            this.rtbUsageStats.ReadOnly = true;
+            this.rtbUsageStats.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
+            this.rtbUsageStats.Size = new System.Drawing.Size(277, 55);
+            this.rtbUsageStats.TabIndex = 13;
+            this.rtbUsageStats.Text = "Line1\nLine2\nLine3";
+            // 
+            // flowLayoutPanel3
+            // 
+            this.flowLayoutPanel3.AutoSize = true;
+            this.flowLayoutPanel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.flowLayoutPanel3.Controls.Add(this.flowLayoutPanel1);
+            this.flowLayoutPanel3.Controls.Add(this.rtbUsageStats);
+            this.flowLayoutPanel3.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(12, 12);
+            this.flowLayoutPanel3.Name = "flowLayoutPanel3";
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(283, 223);
+            this.flowLayoutPanel3.TabIndex = 14;
             // 
             // AboutBox
             // 
@@ -170,8 +204,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(339, 214);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.ClientSize = new System.Drawing.Size(712, 614);
+            this.Controls.Add(this.flowLayoutPanel3);
             this.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -186,6 +220,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             ((System.ComponentModel.ISupportInitialize)(this.LogoBox)).EndInit();
             this.flowLayoutPanel2.ResumeLayout(false);
             this.flowLayoutPanel2.PerformLayout();
+            this.flowLayoutPanel3.ResumeLayout(false);
+            this.flowLayoutPanel3.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -202,5 +238,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         private System.Windows.Forms.LinkLabel AneejianLink;
         private System.Windows.Forms.LinkLabel BmcLink;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel2;
+        private System.Windows.Forms.RichTextBox rtbUsageStats;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
     }
 }
