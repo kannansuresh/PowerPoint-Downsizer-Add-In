@@ -1,5 +1,4 @@
 ﻿using Aneejian.PowerPoint.Downsizer.SlideMaster;
-using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
 
