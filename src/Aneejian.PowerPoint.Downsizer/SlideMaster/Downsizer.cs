@@ -8,7 +8,9 @@ namespace Aneejian.PowerPoint.Downsizer.SlideMaster
 {
     public class Downsizer
     {
-        public async Task<IDownsizeResponse> Downsize(IDownsizePotential potential, IDownsizeResponse downsizeResponse)
+        public delegate void StatsUpdater(IDownsizeResponse downsizeResponse = null);
+
+        public async Task<IDownsizeResponse> Downsize(IDownsizePotential potential, IDownsizeResponse downsizeResponse, StatsUpdater updateStat = null)
         {
             try
             {
@@ -33,10 +35,12 @@ namespace Aneejian.PowerPoint.Downsizer.SlideMaster
                 downsizeResponse.ResultMessage = "Failed to remove unused custom layouts and master slides.";
             }
 
+            updateStat?.Invoke(downsizeResponse);
+
             return await Task.FromResult(downsizeResponse).ConfigureAwait(false);
         }
 
-        public async Task<IDownsizePotential> GetDownsizePotential(Presentation activePresentation, IDownsizePotential potential)
+        public async Task<IDownsizePotential> GetDownsizePotential(Presentation activePresentation, IDownsizePotential potential, StatsUpdater updateStat = null)
         {
             var designs = activePresentation.Designs;
             List<Master> availableMasters = new List<Master>();
@@ -55,6 +59,8 @@ namespace Aneejian.PowerPoint.Downsizer.SlideMaster
             }
             potential.UnusedLayouts = availableCustomLayouts.Where(layout => !usedCustomLayouts.Contains(layout)).ToList();
             potential.UnusedMasters = availableMasters.Where(master => !(from CustomLayout layout in master.CustomLayouts select layout).ToList().Except(potential.UnusedLayouts).Any()).ToList();
+
+            updateStat?.Invoke();
 
             return await Task.FromResult(potential).ConfigureAwait(false);
         }
