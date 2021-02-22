@@ -34,8 +34,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             var msgBoxIcon = anyPotential ? MessageBoxIcon.Information : MessageBoxIcon.Exclamation;
             var message = anyPotential ? $"Unused layouts: {potential.UnusedLayoutsCount}{nl}Unused master slides: {potential.UnusedMastersCount}." : Constants.Messages.NothingToRemove;
 
-            message += $"{nl}Usage counter: {settings.Stat_UsageCounter}{nl}";
-
             if (anyPotential)
             {
                 if (performDownsize)
