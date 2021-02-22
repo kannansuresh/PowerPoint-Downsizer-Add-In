@@ -8,7 +8,7 @@
     <Setting Name="Ribbon_ShowCoffeeButton" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="App_UsageCounter" Type="System.UInt64" Scope="User">
+    <Setting Name="Stat_UsageCounter" Type="System.UInt64" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
     <Setting Name="Coffee_ButtonRevealThreshold" Type="System.Int32" Scope="Application">

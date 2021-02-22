@@ -50,12 +50,12 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public ulong App_UsageCounter {
+        public ulong Stat_UsageCounter {
             get {
-                return ((ulong)(this["App_UsageCounter"]));
+                return ((ulong)(this["Stat_UsageCounter"]));
             }
             set {
-                this["App_UsageCounter"] = value;
+                this["Stat_UsageCounter"] = value;
             }
         }
         
