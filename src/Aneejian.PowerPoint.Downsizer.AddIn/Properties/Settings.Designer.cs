@@ -118,7 +118,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("v3.0.0")]
+        [global::System.Configuration.DefaultSettingValueAttribute("v1.0.0")]
         public string App_Version {
             get {
                 return ((string)(this["App_Version"]));

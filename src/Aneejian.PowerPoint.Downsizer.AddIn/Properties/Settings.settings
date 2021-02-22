@@ -27,7 +27,7 @@
       <Value Profile="(Default)">False</Value>
     </Setting>
     <Setting Name="App_Version" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">v3.0.0</Value>
+      <Value Profile="(Default)">v1.0.0</Value>
     </Setting>
     <Setting Name="Update_CheckUrl" Type="System.String" Scope="Application">
       <Value Profile="(Default)">https://aneejian.github.io/Change-Case-Excel-Add-In/update-info.txt</Value>

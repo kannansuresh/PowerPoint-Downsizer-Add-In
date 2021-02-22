@@ -5,7 +5,7 @@ using System.Reflection;
 [assembly: AssemblyCopyright("Copyright © Aneejian 2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
-[assembly: AssemblyInformationalVersion("1.0.1")]
+[assembly: AssemblyInformationalVersion("1.0.0")]
 #if DEBUG
 [assembly: AssemblyConfiguration("Debug")]
 #else
