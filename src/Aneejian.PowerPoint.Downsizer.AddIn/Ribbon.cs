@@ -166,7 +166,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public bool GetCoffeeVisibility(Office.IRibbonControl control)
         {
-            return settings.Ribbon_ShowCoffeeButton;
+            return settings.Ribbon_ShowCoffeeButton && Fickles.EnableCoffee;
         }
 
         public object GetLabel(Office.IRibbonControl control)
