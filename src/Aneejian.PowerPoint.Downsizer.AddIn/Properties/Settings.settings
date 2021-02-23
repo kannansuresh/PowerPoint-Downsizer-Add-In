@@ -11,9 +11,6 @@
     <Setting Name="Stat_UsageCounter" Type="System.UInt64" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
-    <Setting Name="Coffee_ButtonRevealThreshold" Type="System.Int32" Scope="Application">
-      <Value Profile="(Default)">10</Value>
-    </Setting>
     <Setting Name="Coffee_AlreadyBought" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
@@ -26,41 +23,8 @@
     <Setting Name="Ribbon_ShowUpdateButton" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>
     </Setting>
-    <Setting Name="App_Version" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">v1.0.0</Value>
-    </Setting>
-    <Setting Name="Update_CheckUrl" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://kannansuresh.github.io/PowerPoint-Downsizer/update-info.txt</Value>
-    </Setting>
     <Setting Name="Update_FilePath" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="App_Name" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">PowerPoint Downsizer Add-In</Value>
-    </Setting>
-    <Setting Name="App_Copyright" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Copyright ©  Aneejian 2021</Value>
-    </Setting>
-    <Setting Name="App_Company" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Aneejian</Value>
-    </Setting>
-    <Setting Name="App_Description" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Add-In to downsize PowerPoint presentations by removing unused layouts and master slides.</Value>
-    </Setting>
-    <Setting Name="App_Homepage" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://aneejian.com</Value>
-    </Setting>
-    <Setting Name="Coffee_Url" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://www.buymeacoffee.com/aneejian</Value>
-    </Setting>
-    <Setting Name="App_Page" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://kannansuresh.github.io/PowerPoint-Downsizer/</Value>
-    </Setting>
-    <Setting Name="App_Github" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://kannansuresh.github.io/PowerPoint-Downsizer/</Value>
-    </Setting>
-    <Setting Name="App_Help" Type="System.String" Scope="User">
-      <Value Profile="(Default)">https://kannansuresh.github.io/PowerPoint-Downsizer/</Value>
     </Setting>
     <Setting Name="Stat_LayoutsDeleted" Type="System.UInt64" Scope="User">
       <Value Profile="(Default)">0</Value>

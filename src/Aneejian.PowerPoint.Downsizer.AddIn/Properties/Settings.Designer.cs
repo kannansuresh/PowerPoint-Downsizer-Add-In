@@ -59,15 +59,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("10")]
-        public int Coffee_ButtonRevealThreshold {
-            get {
-                return ((int)(this["Coffee_ButtonRevealThreshold"]));
-            }
-        }
-        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("False")]
@@ -116,24 +107,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("v1.0.0")]
-        public string App_Version {
-            get {
-                return ((string)(this["App_Version"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://kannansuresh.github.io/PowerPoint-Downsizer/update-info.txt")]
-        public string Update_CheckUrl {
-            get {
-                return ((string)(this["Update_CheckUrl"]));
-            }
-        }
-        
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("")]
@@ -143,94 +116,6 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn.Properties {
             }
             set {
                 this["Update_FilePath"] = value;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("PowerPoint Downsizer Add-In")]
-        public string App_Name {
-            get {
-                return ((string)(this["App_Name"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Copyright ©  Aneejian 2021")]
-        public string App_Copyright {
-            get {
-                return ((string)(this["App_Copyright"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Aneejian")]
-        public string App_Company {
-            get {
-                return ((string)(this["App_Company"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Add-In to downsize PowerPoint presentations by removing unused layouts and master" +
-            " slides.")]
-        public string App_Description {
-            get {
-                return ((string)(this["App_Description"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://aneejian.com")]
-        public string App_Homepage {
-            get {
-                return ((string)(this["App_Homepage"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://www.buymeacoffee.com/aneejian")]
-        public string Coffee_Url {
-            get {
-                return ((string)(this["Coffee_Url"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://kannansuresh.github.io/PowerPoint-Downsizer/")]
-        public string App_Page {
-            get {
-                return ((string)(this["App_Page"]));
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://kannansuresh.github.io/PowerPoint-Downsizer/")]
-        public string App_Github {
-            get {
-                return ((string)(this["App_Github"]));
-            }
-            set {
-                this["App_Github"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://kannansuresh.github.io/PowerPoint-Downsizer/")]
-        public string App_Help {
-            get {
-                return ((string)(this["App_Help"]));
-            }
-            set {
-                this["App_Help"] = value;
             }
         }
         

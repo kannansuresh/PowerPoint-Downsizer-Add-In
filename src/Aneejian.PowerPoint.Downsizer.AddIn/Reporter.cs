@@ -7,9 +7,8 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
     internal static class Reporter
     {
-        private const string caption = Constants.AddInName;
+        private const string caption = Fickles.AppInfo.Product;
         private static readonly string nl = Environment.NewLine;
-        private static readonly Properties.Settings settings = Properties.Settings.Default;
 
         internal static async Task ReportDownsizeStatus(IDownsizeResponse response)
         {
@@ -64,9 +63,10 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         internal static async Task ReportHideCoffee()
         {
+            var settings = Properties.Settings.Default;
             var message = $"Already bought a coffee? {nl}{nl}";
 
-            message += string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Click 'Yes' if you have already bought a coffee? {0}{0}If you haven't bought a coffee yet, the 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times after clicking 'No'.", nl, settings.Coffee_ButtonRevealThreshold * (settings.Coffee_HideCounter + 1), settings.Stat_UsageCounter);
+            message += string.Format("You have used this add-in {2} times.{0}Consider buying a coffee if you liked it.{0}{0}Click 'Yes' if you have already bought a coffee? {0}{0}If you haven't bought a coffee yet, the 'Buy a Coffee!' button will reveal itself after you have used this add-in {1} more times after clicking 'No'.", nl, Fickles.CoffeeRevealThreshold * (settings.Coffee_HideCounter + 1), settings.Stat_UsageCounter);
 
             var hide = await Task.FromResult(MessageBox.Show(message, caption, MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question, MessageBoxDefaultButton.Button3)).ConfigureAwait(false);
 

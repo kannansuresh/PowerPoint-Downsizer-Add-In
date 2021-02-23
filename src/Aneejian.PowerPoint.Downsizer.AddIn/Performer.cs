@@ -31,7 +31,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         internal static async Task Help()
         {
-            await Task.FromResult(Process.Start(_settings.App_Help)).ConfigureAwait(false);
+            await Task.FromResult(Process.Start(Fickles.HelpUrl)).ConfigureAwait(false);
         }
 
         internal static async Task Update()
@@ -41,12 +41,12 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         internal static async Task Coffee()
         {
-            await Task.FromResult(Process.Start(_settings.Coffee_Url)).ConfigureAwait(false);
+            await Task.FromResult(Process.Start(Fickles.CoffeeUrl)).ConfigureAwait(false);
         }
 
         internal static async Task HomePage()
         {
-            await Task.FromResult(Process.Start(_settings.App_Homepage)).ConfigureAwait(false);
+            await Task.FromResult(Process.Start(Fickles.CompanyUrl)).ConfigureAwait(false);
         }
 
         internal static object GetProperty(string tag, ControlProperties property)

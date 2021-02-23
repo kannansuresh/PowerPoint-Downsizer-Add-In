@@ -19,7 +19,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
                     _settings.Stat_MastersDeleted += Convert.ToUInt64(downsizeResponse.MasterSlidesDeleted);
                 }
 
-                if (!_settings.Coffee_AlreadyBought && _settings.Coffee_HiddenSinceCounter >= _settings.Coffee_ButtonRevealThreshold * _settings.Coffee_HideCounter)
+                if (!_settings.Coffee_AlreadyBought && _settings.Coffee_HiddenSinceCounter >= Fickles.CoffeeRevealThreshold * _settings.Coffee_HideCounter)
                 {
                     _settings.Ribbon_ShowCoffeeButton = true;
                     _settings.Coffee_HiddenSinceCounter = 0;

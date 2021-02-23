@@ -7,30 +7,28 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
     internal class UpdateManager
     {
-        private static readonly Properties.Settings _settings = Properties.Settings.Default;
-        private readonly string _currentVersion = _settings.App_Version;
-        private readonly string _upateInfoUrl = _settings.Update_CheckUrl;
-
         internal async Task CheckForUpdates()
         {
+            var settings = Properties.Settings.Default;
+
             try
             {
-                var releaseInfo = await GetWebsiteDataAsync(_upateInfoUrl).ConfigureAwait(false);
+                var releaseInfo = await GetWebsiteDataAsync(Fickles.CheckUpdateUrl).ConfigureAwait(false);
 
                 if (!string.IsNullOrWhiteSpace(releaseInfo))
                 {
                     var updateInfo = releaseInfo.Split(new[] { "\n", "\r", "\n\r" }, StringSplitOptions.RemoveEmptyEntries);
-                    var updateAvailable = updateInfo[0].ToNumber() > _currentVersion.ToNumber();
-                    if (updateAvailable) _settings.Ribbon_ShowDownsizerTab = true;
-                    _settings.Ribbon_ShowUpdateButton = updateAvailable;
-                    _settings.Update_FilePath = updateInfo[1];
-                    _settings.Save();
+                    var updateAvailable = updateInfo[0].ToNumber() > Fickles.AppInfo.Version.ToNumber();
+                    if (updateAvailable) settings.Ribbon_ShowDownsizerTab = true;
+                    settings.Ribbon_ShowUpdateButton = updateAvailable;
+                    settings.Update_FilePath = updateInfo[1];
+                    settings.Save();
                 }
             }
             catch (Exception)
             {
-                _settings.Ribbon_ShowUpdateButton = false;
-                _settings.Save();
+                settings.Ribbon_ShowUpdateButton = false;
+                settings.Save();
             }
         }
 
@@ -45,7 +43,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             {
                 var uri = new Uri(url);
                 var client = new HttpClient();
-                client.DefaultRequestHeaders.Add("User-Agent", "PowerPoint Downsizer Add-In");
+                client.DefaultRequestHeaders.Add("User-Agent", Fickles.AppInfo.Product);
                 var response = await client.GetAsync(uri).ConfigureAwait(false);
                 return await response.Content.ReadAsStringAsync().ConfigureAwait(false);
             }

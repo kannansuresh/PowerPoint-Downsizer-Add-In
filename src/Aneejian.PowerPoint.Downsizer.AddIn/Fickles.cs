@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Aneejian.PowerPoint.Downsizer.AddIn
+﻿namespace Aneejian.PowerPoint.Downsizer.AddIn
 {
     internal static class Fickles
     {
@@ -14,6 +8,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         internal const string RepositoryUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer/";
         internal const string BlogPostUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer/";
         internal const string CheckUpdateUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer/update-info.txt";
+        internal const string HelpUrl = BlogPostUrl;
 
         // Coffee
 
