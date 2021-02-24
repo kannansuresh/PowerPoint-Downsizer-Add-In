@@ -31,7 +31,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
         {
             var anyPotential = potential.UnusedLayoutsCount > 0 || potential.UnusedMastersCount > 0;
             var msgBoxIcon = anyPotential ? MessageBoxIcon.Information : MessageBoxIcon.Exclamation;
-            var message = anyPotential ? $"Unused layouts: {potential.UnusedLayoutsCount}{nl}Unused master slides: {potential.UnusedMastersCount}." : Fickles.Messages.NothingToRemove;
+            var message = anyPotential ? $"Unused layouts: {potential.UnusedLayoutsCount}{nl}Unused master slides: {potential.UnusedMastersCount}" : Fickles.Messages.NothingToRemove;
 
             if (anyPotential)
             {

@@ -16,7 +16,7 @@ namespace Aneejian.PowerPoint.Downsizer.SlideMaster
             {
                 return RemovedAny ?
                     $"Unused layouts deleted: {CustomLayoutsDeleted} {newLine}" +
-                    $"Unused master slides deleted: {MasterSlidesDeleted}." :
+                    $"Unused master slides deleted: {MasterSlidesDeleted}" :
                     Constants.Messages.NothingToRemove;
             }
             else

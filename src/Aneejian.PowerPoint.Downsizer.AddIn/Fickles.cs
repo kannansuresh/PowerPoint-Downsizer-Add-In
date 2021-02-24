@@ -5,9 +5,9 @@
         // URLs
 
         internal const string CompanyUrl = "https://aneejian.com";
-        internal const string RepositoryUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer/";
+        internal const string RepositoryUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer-Add-In/";
         internal const string BlogPostUrl = "https://aneejian.com/powerpoint-downsizer-add-in/";
-        internal const string CheckUpdateUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer/update-info.txt";
+        internal const string CheckUpdateUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer-Add-In/update-info.txt";
         internal const string HelpUrl = BlogPostUrl;
 
         // Coffee
