@@ -24,7 +24,7 @@
             internal const string Description = "Add-In to downsize PowerPoint presentations by removing unused layouts and master slides.";
             internal const string Company = "Aneejian";
             internal const string Product = Title;
-            internal const string Copyright = "Copyright ©  Aneejian 2021";
+            internal const string Copyright = "Copyright © Aneejian 2021";
             internal const string Version = "v1.0.0";
         }
 
