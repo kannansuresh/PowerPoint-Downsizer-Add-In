@@ -1,6 +1,6 @@
 ﻿namespace Aneejian.PowerPoint.Downsizer
 {
-    public static partial class Constants
+    internal static partial class Constants
     {
         public const string ProductName = "PowerPoint Downsizer";
         public const string AddInName = "PowerPoint Downsizer Add-In";
@@ -9,6 +9,6 @@
 
         public const string HomePageUrl = "https://aneejian.com";
         public const string BuyCoffeeUrl = "https://www.buymeacoffee.com/aneejian";
-        public const string HelpUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer/";
+        public const string HelpUrl = "https://aneejian.com/powerpoint-downsizer-add-in/";
     }
 }

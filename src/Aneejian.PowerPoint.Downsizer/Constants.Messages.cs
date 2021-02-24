@@ -1,6 +1,6 @@
 ﻿namespace Aneejian.PowerPoint.Downsizer
 {
-    public static partial class Constants
+    internal static partial class Constants
     {
         public static class Messages
         {
