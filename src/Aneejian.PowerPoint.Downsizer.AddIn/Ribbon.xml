@@ -16,7 +16,7 @@
 
           <button id="BtnAbout" onAction="About" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="About" />
 
-          <splitButton id="SplitBtnCoffee" getVisible="GetCoffeeVisibility" size="normal">
+          <splitButton id="SplitBtnCoffee" getVisible="GetCoffeeVisibility" size="large">
             <button id="BtnCoffee" onAction="Coffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" getScreentip="GetScreenTip" getSupertip="GetSuperTip" tag="Coffee" />
             <menu id="SplitBtnCoffee_Menu" itemSize="normal">
               <button id="BtnHideCoffee" onAction="HideCoffee" getLabel="GetLabel" getImage="GetImage" getDescription="GetDescription" tag="HideCoffee" getSupertip="GetSuperTip" />

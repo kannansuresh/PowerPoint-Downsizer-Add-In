@@ -37,6 +37,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             {
                 if (performDownsize)
                 {
+                    msgBoxIcon = MessageBoxIcon.Question;
                     message += $"{nl}{nl}Do you want to remove them now?";
                     var downsize = await Task.FromResult(MessageBox.Show(message, caption, MessageBoxButtons.YesNo, msgBoxIcon, MessageBoxDefaultButton.Button2)).ConfigureAwait(false);
                     if (downsize == DialogResult.Yes)
