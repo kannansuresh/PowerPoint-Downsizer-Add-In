@@ -1,2 +1,2 @@
 v1.0.0
-https://github.com/kannansuresh/PowerPoint-Downsizer/releases/download/v1.0.0/PowerPoint-Downsizer-Add-In.msi
+https://aneejian.com/powerpoint-downsizer-add-in/#download
