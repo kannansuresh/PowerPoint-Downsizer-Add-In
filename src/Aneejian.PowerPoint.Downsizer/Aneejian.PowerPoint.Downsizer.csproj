@@ -39,7 +39,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>PPTDownsizer.pfx</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>Properties\aneejian.pfx</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <PropertyGroup>
     <DelaySign>false</DelaySign>
@@ -78,8 +78,8 @@
     <None Include="..\.editorconfig">
       <Link>Properties\.editorconfig</Link>
     </None>
+    <None Include="Properties\aneejian.pfx" />
     <None Include="packages.config" />
-    <None Include="PPTDownsizer.pfx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

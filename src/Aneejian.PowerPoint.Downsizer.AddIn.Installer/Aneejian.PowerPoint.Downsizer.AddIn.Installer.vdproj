@@ -69,6 +69,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_695061E56EF44B97326E7FBDFA2A7B80"
+        "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_853C34EF815A4E68B584710230F41862"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -87,12 +93,6 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_F12A88ACD3AED773E174F098AB7EA3F1"
-        "OwnerKey" = "8:_8E67E3CBC8BC43A28FE1564FA0C05490"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
         "MsmKey" = "8:_F3394A3FF9F445E9877FC79F99215736"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -106,7 +106,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_F12A88ACD3AED773E174F098AB7EA3F1"
+        "OwnerKey" = "8:_695061E56EF44B97326E7FBDFA2A7B80"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -468,6 +468,37 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_695061E56EF44B97326E7FBDFA2A7B80"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Aneejian.PowerPoint.Downsizer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=22aaa257dca86fce, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_695061E56EF44B97326E7FBDFA2A7B80"
+                    {
+                    "Name" = "8:Aneejian.PowerPoint.Downsizer.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Aneejian.PowerPoint.Downsizer.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_853C34EF815A4E68B584710230F41862"
             {
             "SourcePath" = "8:..\\Aneejian.PowerPoint.Downsizer.AddIn\\bin\\Release\\Aneejian.PowerPoint.Downsizer.AddIn.dll.manifest"
@@ -506,37 +537,6 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_F12A88ACD3AED773E174F098AB7EA3F1"
-            {
-            "AssemblyRegister" = "3:1"
-            "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Aneejian.PowerPoint.Downsizer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=39974dc4a7653f09, processorArchitecture=MSIL"
-                "ScatterAssemblies"
-                {
-                    "_F12A88ACD3AED773E174F098AB7EA3F1"
-                    {
-                    "Name" = "8:Aneejian.PowerPoint.Downsizer.dll"
-                    "Attributes" = "3:512"
-                    }
-                }
-            "SourcePath" = "8:Aneejian.PowerPoint.Downsizer.dll"
-            "TargetName" = "8:"
-            "Tag" = "8:"
-            "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F3394A3FF9F445E9877FC79F99215736"
@@ -638,15 +638,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PowerPoint Downsizer Add-in"
-        "ProductCode" = "8:{917DC3B0-2760-471C-AA84-F9AD54E35A8F}"
-        "PackageCode" = "8:{93EB4C95-19DF-4183-9DDB-0E2186D7FEE2}"
+        "ProductCode" = "8:{4752E558-D8FA-44DC-9574-F1DBD78CF49D}"
+        "PackageCode" = "8:{80EA2E1A-C268-44DF-B25E-2F041959AA99}"
         "UpgradeCode" = "8:{A69F4B07-E0E4-4110-9F4C-EE0A5BC1D62B}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:Aneejian"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://aneejian.com/powerpoint-downsizer-add-in"
@@ -1252,7 +1252,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_8E67E3CBC8BC43A28FE1564FA0C05490"
             {
-            "SourcePath" = "8:..\\Aneejian.PowerPoint.Downsizer.AddIn\\obj\\Release\\Aneejian.PowerPoint.Downsizer.AddIn.dll"
+            "SourcePath" = "8:..\\Aneejian.PowerPoint.Downsizer.AddIn\\obj\\Debug\\Aneejian.PowerPoint.Downsizer.AddIn.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_3F7786D8C4934093AD4C42330D43D76E"
