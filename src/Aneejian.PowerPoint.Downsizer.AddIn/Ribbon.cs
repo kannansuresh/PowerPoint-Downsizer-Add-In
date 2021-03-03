@@ -61,7 +61,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         public async void GetDownsizePotential(Office.IRibbonControl control)
         {
-            await Performer.GetPotential().ConfigureAwait(false);
+            await Performer.GetPotential(false).ConfigureAwait(false);
         }
 
         public async void Downsize(Office.IRibbonControl control)

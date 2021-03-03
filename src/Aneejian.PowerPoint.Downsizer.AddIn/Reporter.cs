@@ -27,6 +27,11 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
             await Task.FromResult(MessageBox.Show(response.DownsizeResult, caption, MessageBoxButtons.OK, msgBoxIcon)).ConfigureAwait(false);
         }
 
+        internal static async Task ReportError(string message)
+        {
+            await Task.FromResult(MessageBox.Show(message, caption, MessageBoxButtons.OK, MessageBoxIcon.Error)).ConfigureAwait(false);
+        }
+
         internal static async Task ReportDownsizePotential(IDownsizePotential potential, bool performDownsize)
         {
             var anyPotential = potential.UnusedLayoutsCount > 0 || potential.UnusedMastersCount > 0;
