@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B6711EA-FDD2-46BE-A146-7A4258BD3D5F}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		Solution Items\aneejian.pfx = Solution Items\aneejian.pfx
 		Solution Items\GlobalAssemblyInfo.cs = Solution Items\GlobalAssemblyInfo.cs
 	EndProjectSection
 EndProject
