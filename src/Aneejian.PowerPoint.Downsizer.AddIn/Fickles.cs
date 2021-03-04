@@ -11,7 +11,7 @@
             internal const string Company = "Aneejian";
             internal const string Product = Title;
             internal const string Copyright = "Copyright © Aneejian 2021";
-            internal const string Version = "v1.0.0";
+            internal const string Version = "v1.0.1";
         }
 
         // Messages
