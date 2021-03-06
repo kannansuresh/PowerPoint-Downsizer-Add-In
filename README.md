@@ -7,3 +7,6 @@ A PowerPoint add-in to remove unused layouts and master slides. This reduces siz
 <p align="center">
   <img src="assets/powerpoint-downsizer-add-in-from-tab.gif">
 </p>
+
+> Special thanks to [Advanced Installer] for supporting this project with their free professional edition.
+[Advanced Installer]: https://www.advancedinstaller.com/
