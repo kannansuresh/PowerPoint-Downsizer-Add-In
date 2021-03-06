@@ -29,9 +29,9 @@
 
         internal const string CompanyUrl = "https://aneejian.com";
         internal const string RepositoryUrl = "https://github.com/kannansuresh/PowerPoint-Downsizer-Add-In";
-        internal const string BlogPostUrl = "https://aneejian.com/powerpoint-downsizer-add-in/";
+        internal const string BlogPostUrl = "https://aneejian.com/powerpoint-downsizer-add-in/#using-the-add-in";
         internal const string CheckUpdateUrl = "https://kannansuresh.github.io/PowerPoint-Downsizer-Add-In/update-info.txt";
-        internal const string HelpUrl = BlogPostUrl;
+        internal const string HelpUrl = "https://github.com/kannansuresh/PowerPoint-Downsizer-Add-In/discussions/categories/q-a";
 
         // Coffee
 

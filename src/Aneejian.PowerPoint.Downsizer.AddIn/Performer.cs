@@ -45,6 +45,7 @@ namespace Aneejian.PowerPoint.Downsizer.AddIn
 
         internal static async Task Help()
         {
+            await Task.FromResult(Process.Start(Fickles.BlogPostUrl)).ConfigureAwait(false);
             await Task.FromResult(Process.Start(Fickles.HelpUrl)).ConfigureAwait(false);
         }
 

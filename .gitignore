@@ -348,8 +348,5 @@ healthchecksdb
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
 
-# Input folder
-ey/
-shortcuts/
-test/output/
-test/credentials.json
+#advanced installer folder
+src/deploy/advanced installer/*/

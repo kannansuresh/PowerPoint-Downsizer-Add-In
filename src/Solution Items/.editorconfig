@@ -8,4 +8,3 @@ dotnet_diagnostic.IDE0060.severity = none
 
 # RCS1114: Remove redundant delegate creation.
 dotnet_diagnostic.RCS1114.severity = none
-
