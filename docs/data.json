@@ -1,6 +1,6 @@
 {
-    "site": "Aneejian",
-    "URL": "https://aneejian.com",
-    "postId": 32,
-    "liked": true
+  "schemaVersion": 1,
+  "label": "hello",
+  "message": "sweet world",
+  "color": "orange"
 }
