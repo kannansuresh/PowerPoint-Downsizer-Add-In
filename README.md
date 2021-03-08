@@ -1,6 +1,6 @@
 # PowerPoint Downsizer
 
-[![Github all releases](https://img.shields.io/github/downloads/kannansuresh/PowerPoint-Downsizer-Add-In/total.svg?style=for-the-badge)](https://github.com/kannansuresh/PowerPoint-Downsizer-Add-In/releases/)
+[![Total Downloads](https://img.shields.io/github/downloads/kannansuresh/PowerPoint-Downsizer-Add-In/total.svg?style=for-the-badge)](https://aneejian.com/powerpoint-downsizer-add-in/#download) [![Latest Release](https://img.shields.io/github/release/kannansuresh/PowerPoint-Downsizer-Add-In.svg?style=for-the-badge)](https://github.com/kannansuresh/PowerPoint-Downsizer-Add-In/releases/latest)
 
 A PowerPoint add-in to remove unused layouts and master slides. This reduces size of our PowerPoint files created from heavy templates.
 
