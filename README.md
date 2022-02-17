@@ -15,3 +15,9 @@ A PowerPoint add-in to remove unused layouts and master slides. This reduces siz
 [Advanced Installer] for supporting this project with their free professional edition.
 
 [Advanced Installer]: https://www.advancedinstaller.com/
+
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
